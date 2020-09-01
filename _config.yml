@@ -1,0 +1,38 @@
+# site settings
+title: Yanbing Wang
+subtitle:
+email: yanb0514@gmail.com
+description: A transportation researcher.
+# baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+# url: # the base hostname & protocol for your site
+url: 
+baseurl: "yanbingwangjekyll"
+author:
+street_address: 1025 16th Ave S
+city: Nashville
+state: TN
+zip_code: 37212
+country: United States of America
+# phone: (716) 555-5555
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
