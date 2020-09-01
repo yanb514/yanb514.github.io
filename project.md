@@ -10,7 +10,7 @@ nav-menu: true
  <!-- <blockquote>Some of my on-going projects</blockquote> -->
  <div class="row">
 <h4>ExpenseTracker</h4>
-<p><span class="image left"><img src="{% link assets/images/pic09.jpg %}" alt="" /></span>Are you struggled about tracking your spendings for all of your credit cards? Does your online bank accounts usually put your expenses in the wrong category? Having trouble visualizing all of your expenses clearly? No worries! ExpenseTracker can help! Seeing your expenses is the first step towards saving. ExpenseTracker is a Python script to run locally on your machine without sharing your personal data. It gathers your cvs expense reports from all of your financial institutions and automatically makes a comprehensive expense report with interactive visualizations. It also automatically re-categorize your spendings based on the descriptions using Naive Bayes Classifier. Give it a try!</p>
+<p><span class="image left"><img src="assets/images/pic09.jpg" alt="" /></span>Are you struggled about tracking your spendings for all of your credit cards? Does your online bank accounts usually put your expenses in the wrong category? Having trouble visualizing all of your expenses clearly? No worries! ExpenseTracker can help! Seeing your expenses is the first step towards saving. ExpenseTracker is a Python script to run locally on your machine without sharing your personal data. It gathers your cvs expense reports from all of your financial institutions and automatically makes a comprehensive expense report with interactive visualizations. It also automatically re-categorize your spendings based on the descriptions using Naive Bayes Classifier. Give it a try!</p>
 </div>
 
  <div class="row">
