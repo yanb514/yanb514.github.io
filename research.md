@@ -44,9 +44,9 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Rhoncus magna</h3>
+					<h3>Automatic data cleaning via tensor factorization for large urban environmental sensor networks</h3>
 				</header>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+				<p>The US Environmental Protection Agency identifies that urban heat islands can negatively impact a community’s environment and quality of life. Using low cost urban sensing networks, it is possible to measure the impacts of mitigation strategies in communities at a fine-grained scale, informing context-aware policies and infrastructure design. However, fine-grained city-scale data analysis is complicated by common, tedious data cleaning tasks such as removing outliers and imputing missing data. To address the challenge of data cleaning, this article introduces a robust low-rank tensor factorization method to automatically correct anomalies and impute missing entries for high-dimensional urban environmental datasets. We validate the method on a synthetically degraded National Oceanic and Atmospheric Administration temperature dataset, with a recovery error of 4%, and apply it to the Array of Things city-scale sensor network in Chicago, IL.</p>
 				<ul class="actions">
 					<li><a href="generic.html" class="button">Learn more</a></li>
 				</ul>
