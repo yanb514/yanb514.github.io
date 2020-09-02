@@ -6,8 +6,8 @@ description: A transportation researcher.
 # baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 # url: # the base hostname & protocol for your site
 
-url: "https://yanbingwang.com"
-# baseurl: "yanbingwangjekyll"
+url: "yanbingwang.com"
+baseurl: "yanbingwangjekyll"
 author:
 street_address: 1025 16th Ave S
 city: Nashville
