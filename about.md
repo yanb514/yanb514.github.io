@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: 'View my CV here'
+description: 'Latest news, CV, etc.'
 image: assets/images/bike.jpg
 nav-menu: true
 ---
