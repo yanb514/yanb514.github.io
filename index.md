@@ -2,9 +2,9 @@
 layout: home
 title: Home
 landing-title: 'Yanbing Wang'
-landing-image: assets/images/banner.JPG
+landing-image: assets/images/banner.jpg
 description: 'change description at index.md'
-image: assets/images/bike.jpg
+image: assets/images/banner.jpg
 author: null
 show_tile: false
 ---
