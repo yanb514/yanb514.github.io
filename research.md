@@ -32,7 +32,7 @@ nav-menu: true
 				</header>
 				<p>This project explores methods for model parameter estimation on a car-following model using data collected from Adaptive Cruise Control (ACC) enabled vehicles. The proposed methods are batch method least-squares and an online particle filter. Numerical experiments demonstrate the accuracy and computational performance of the methods relative to a commonly used simulation-based optimization approach. The methods are also assessed on empirical data collected from a 2019 model year ACC vehicle driven in a highway environment. Speed, space gap, and relative velocity data are recorded directly from the factory-installed radar unit via the vehicle’s CAN bus. The least-squares method has the fastest run-time performance, and is up to 3 orders of magnitude faster than other methods. The particle filter is faster than real-time, and therefore is suitable in streaming applications in which the datasets can grow arbitrarily large.</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Preprint</a></li>
+					<li><a href="https://arxiv.org/abs/1911.06454" class="button">Read more</a></li>
 				</ul>
 			</div>
 		</div>
@@ -64,7 +64,7 @@ nav-menu: true
 				</header>
 				<p>This project explores methods for model parameter estimation on a car-following model using data collected from Adaptive Cruise Control (ACC) enabled vehicles. The proposed methods are batch method least-squares and an online particle filter. Numerical experiments demonstrate the accuracy and computational performance of the methods relative to a commonly used simulation-based optimization approach. The methods are also assessed on empirical data collected from a 2019 model year ACC vehicle driven in a highway environment. Speed, space gap, and relative velocity data are recorded directly from the factory-installed radar unit via the vehicle’s CAN bus. The least-squares method has the fastest run-time performance, and is up to 3 orders of magnitude faster than other methods. The particle filter is faster than real-time, and therefore is suitable in streaming applications in which the datasets can grow arbitrarily large.</p>
 				<ul class="actions">
-					<li><a href="https://arxiv.org/abs/1911.06454" class="button">Learn more</a></li>
+					<li><a href="https://dl.acm.org/doi/abs/10.1145/3302509.3313325" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
