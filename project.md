@@ -18,19 +18,7 @@ nav-menu: true
   </div>
  	<div class="9u 12u$(medium)">
  		<ul class="alt">
- 			<!-- <li><i>Sunset </i>| piano <iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208428784&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-      </li>
- 			<li><i>Sound Mass </i>| string quartet<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198951116&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-      </li>
- 			<li><i>Hilton Lobby </i>| electronic mix<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223609846&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-      </li>
- 			<li><i>The Rain </i>| woodwind trio</li>
-      <li><i>Fragments </i>| percussion</li>
-      <li><i>Jumpy Physics</i> | a good friend raps with a theremin</li> -->
-
       <iframe width="100%" height="350" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194876958&color=%23ff5500&auto_play=false&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-      <!-- <div style="font-size: 100px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 200;"><a href="https://soundcloud.com/yanbingwang" title="" target="blank" style="color: #cccccc; text-decoration: none;">Yanbing Wang</a> · <a href="https://soundcloud.com/yanbingwang/sets/originals" title="" target="blank" style="color: #cccccc; text-decoration: none;">Originals</a></div> -->
-
  		</ul>
  	</div>
  </div>
@@ -44,19 +32,9 @@ nav-menu: true
     <h4>Covers & improvs</h4>
   </div>
  	<div class="9u 12u$(medium)">
- 		<!-- <ul class="alt">
- 			<li><i>Georgia On My Mind</i> | piano <iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/759171547&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe></li>
- 			<li><i>I'll Remember April</i> | piano<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/775118917&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></li>
-      <li><i>Neo-soul loop 1</i> | piano<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/832161949&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></li>
-
-      <li><i>Neo-soul loop 2</i> | piano<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/860932828&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></li>
-
-      <li><i>Come Away With Me</i> | piano<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/778052740&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></li>
- 		</ul> -->
     <ul class="alt">
     <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194807877&color=%23ff5500&auto_play=false&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"></iframe>
     </ul>
-
 
  	</div>
  </div>
