@@ -18,7 +18,7 @@ nav-menu: true
   </div>
  	<div class="9u 12u$(medium)">
  		<ul class="alt">
- 			<li><i>Sunset </i>| piano <iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208428784&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+ 			<!-- <li><i>Sunset </i>| piano <iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208428784&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
       </li>
  			<li><i>Sound Mass </i>| string quartet<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198951116&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"></iframe>
       </li>
@@ -26,7 +26,10 @@ nav-menu: true
       </li>
  			<li><i>The Rain </i>| woodwind trio</li>
       <li><i>Fragments </i>| percussion</li>
-      <li><i>Jumpy Physics</i> | a good friend raps with a theremin</li>
+      <li><i>Jumpy Physics</i> | a good friend raps with a theremin</li> -->
+
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194876958&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yanbingwang" title="Yanbing Wang" target="blank" style="color: #cccccc; text-decoration: none;">Yanbing Wang</a> · <a href="https://soundcloud.com/yanbingwang/sets/originals" title="Originals" target="blank" style="color: #cccccc; text-decoration: none;">Originals</a></div>
+
  		</ul>
  	</div>
  </div>
