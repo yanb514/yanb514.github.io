@@ -95,7 +95,7 @@ nav-menu: true
 	</div>
 <div class="9u 12u$(medium)">
 	<ul class="alt">
-		<li>Dwight D. Eisenhower Transportation Fellowship, USDOT, 2018 and 2019</li>
+		<li>Dwight D. Eisenhower Transportation Fellowship, USDOT, 2018-2020</li>
 		<li>Russell G. Hamilton Scholar  Graduate Fellowship, Vanderbilt University, 2018</li>
 		<li>Fred S. Bailey Undergraduate Scholarship for Cause-Driven Leaders, University YMCA, 2017</li>
 		<li>Duane Edward and Phyllis Ann Erickson Memorial Scholarship, University of Illinois, 2017</li>
