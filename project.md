@@ -7,7 +7,7 @@ nav-menu: true
 ---
 
 <h2>Music</h2>
- <blockquote>I was classically trained on piano, but over the years I gradually found myself attracted to minimalistic music and modern Jazz. I like music with colorful chords and rich texture. Simple melodies would be a bonus.</blockquote>
+ <blockquote>I used to play classical piano, but over the years I found myself gravitating towards minimalistic music and modern Jazz. I like music with colorful chords and rich texture. Simple melodies would be a bonus.</blockquote>
 
  <div class="row">
  	<div class="1u 12u$(medium)">
@@ -54,7 +54,7 @@ nav-menu: true
       <li><i>Come Away With Me</i> | piano<iframe align="right" width="30%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/778052740&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></li>
  		</ul> -->
     <ul class="alt">
-    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194807877&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=true"></iframe>
+    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194807877&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"></iframe>
     </ul>
 
 
