@@ -8,21 +8,21 @@ nav-menu: true
 
 <h2>My personal projects</h2>
  <!-- <blockquote>Some of my on-going projects</blockquote> -->
- <div class="row">
+ <!-- <div class="row">
 <h4>ExpenseTracker</h4>
 <p><span class="image left"><img src="assets/images/pic09.jpg" alt="" /></span>Are you struggled about tracking your spendings for all of your credit cards? Does your online bank accounts usually put your expenses in the wrong category? Having trouble visualizing all of your expenses clearly? No worries! ExpenseTracker can help! Seeing your expenses is the first step towards saving. ExpenseTracker is a Python script to run locally on your machine without sharing your personal data. It gathers your cvs expense reports from all of your financial institutions and automatically makes a comprehensive expense report with interactive visualizations. It also automatically re-categorize your spendings based on the descriptions using Naive Bayes Classifier. Give it a try!</p>
-</div>
+</div> -->
 
- <div class="row">
+ <!-- <div class="row">
  <h4>ReciPy</h4>
 <p><span class="image right"><img src="{% link assets/images/pic10.jpg %}" alt="" /></span>ReciPy is a Python based application that generates recipes based on your preference, such as body building, weight-losing or anti-inflammatory choices. You can download this app so that it helps notify you (1) what and how much food do you need to buy, (2) when you should take the frozen meat out of the freezer, or (3) when do you need to start season your food before cooking it the next day, etc.</p>
-</div>
+</div> -->
 
 
-<div class="row">
+<!-- <div class="row">
 <h4>MusicGenerator</h4>
 <p><span class="image left"><img src="{% link assets/images/pic09.jpg %}" alt="" /></span>Generate music (midi files, and preferably jazz music) using LSTM. </p>
-</div>
+</div> -->
 
 
 
