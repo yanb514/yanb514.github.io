@@ -47,11 +47,11 @@ nav-menu: true
  	<div class="row 50% uniform">
  		<div class="4u"><span class="image fit"><img src="{% link assets/images/sketch-flower.jpg %}" alt="" /></span></div>
  		<div class="7u"><span class="image fit"><img src="{% link assets/images/sketch-sevier.jpg %}" alt="" /></span></div>
- 		<!-- Break -->
+
     <div class="4u"><span class="image fit"><img src="{% link assets/images/sketch-waves.jpg %}" alt="" /></span></div>
     <div class="4u"><span class="image fit"><img src="{% link assets/images/sketch-lake.jpg %}" alt="" /></span></div>
     <div class="4u"><span class="image fit"><img src="{% link assets/images/sketch-8th.jpg %}" alt="" /></span></div>
-  	<!-- Break -->
+
     <div class="7u"><span class="image fit"><img src="{% link assets/images/wall-waves.JPG %}" alt="" /></span></div>
     <div class="4u"><span class="image fit"><img src="{% link assets/images/painting-boat.JPG %}" alt="" /></span></div>
  	</div>

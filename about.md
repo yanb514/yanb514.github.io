@@ -46,7 +46,7 @@ nav-menu: true
 	</div>
 	<div class="9u 12u$(medium)">
 		<ul class="alt">
-			<li><b>Y. Wang</b>, M.L. Delle Monache and D.B. Work. "Identifiability analysis of nonlinear car-following dynamics". In preparation to <i>Physica D</i>.
+			<li><b>Y. Wang</b>, M.L. Delle Monache and D.B. Work. "Identifiability analysis of nonlinear car-following dynamics". Submitted to <i>Physica D</i>.
 			</li>
 			<li>Qu, Y. Wang, Y. Hu, <b>Y. Wang</b> and H. Baroud. “A data-integration analysis on road emissions and traffic patterns”. <i>Smoky Mountains Computational Sciences and Engineering Conference (SMC)</i>, 2020.
 			</li>
