@@ -1,0 +1,63 @@
+I"><h2>Music</h2>
+<blockquote>I used to play classical piano, but over the years I found myself gravitating towards minimalistic music and modern Jazz. I like music with colorful chords and rich texture. Simple melodies would be a bonus.</blockquote>
+
+<div class="row">
+ 	<div class="1u 12u$(medium)">
+ 		<h4></h4>
+ 	</div>
+  <div class="2u 12u$(medium)">
+    <h4>Originals</h4>
+  </div>
+ 	<div class="9u 12u$(medium)">
+ 		<ul class="alt">
+      <iframe width="100%" height="350" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194876958&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false"></iframe>
+ 		</ul>
+ 	</div>
+ </div>
+
+<div class="row">
+ 	<div class="1u 12u$(medium)">
+ 		<h4></h4>
+ 	</div>
+  <div class="2u 12u$(medium)">
+    <h4>Covers &amp; improvs</h4>
+  </div>
+ 	<div class="9u 12u$(medium)">
+    <ul class="alt">
+    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1194807877&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false"></iframe>
+    </ul>
+
+ 	</div>
+ </div>
+
+<hr class="major" />
+
+<h2>Art</h2>
+<blockquote>Some sketches, oil paintings and architecture models.</blockquote>
+
+<div class="box alt">
+ 	<div class="row 50% uniform">
+ 		<div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-flower.jpg" alt="" /></span></div>
+ 		<div class="7u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-sevier.jpg" alt="" /></span></div>
+
+    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-waves.jpg" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-lake.jpg" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-8th.jpg" alt="" /></span></div>
+
+    <div class="7u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/wall-waves.JPG" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/painting-boat.JPG" alt="" /></span></div>
+ 	</div>
+ </div>
+
+<div class="row">
+ <div class="4u 12u$(medium)">
+    <span class="image width: 10%"><img src="/yanbingwangjekyll/assets/images/model-1.JPG" alt="" /></span>
+    <span class="image fit"><img src="/yanbingwangjekyll/assets/images/model-2.JPG" alt="" /></span>
+ </div>
+
+ <div class="8u 12u$(medium)">
+    <span class="image fit"><img src="/yanbingwangjekyll/assets/images/shuhui%20copy.jpg" alt="" /></span>
+ </div>
+
+</div>
+:ET

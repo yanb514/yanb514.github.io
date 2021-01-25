@@ -6,6 +6,11 @@ image: assets/images/pic03.jpg
 nav-menu: true
 ---
 
+
+
+
+
+
 <h2>Music</h2>
  <blockquote>I used to play classical piano, but over the years I found myself gravitating towards minimalistic music and modern Jazz. I like music with colorful chords and rich texture. Simple melodies would be a bonus.</blockquote>
 

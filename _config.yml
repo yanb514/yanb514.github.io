@@ -7,7 +7,7 @@ description: A transportation researcher.
 # url: # the base hostname & protocol for your site
 
 url: "https://yanbingwang.com"
-# baseurl: "yanbingwangjekyll"
+baseurl: "/yanbingwangjekyll"
 author:
 street_address: 1025 16th Ave S
 city: Nashville
@@ -26,8 +26,8 @@ facebook_url:
 github_url:
 gitlab_url:
 googleplus_url:
-instagram_url:
-linkedin_url:
+instagram_url: "https://www.instagram.com/simptuen/"
+linkedin_url: "https://www.linkedin.com/in/yanbing-wang/"
 pinterest_url:
 slack_url:
 twitter_url:
