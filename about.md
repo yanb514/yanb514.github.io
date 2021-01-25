@@ -28,12 +28,12 @@ nav-menu: true
 </div>
 
 	<div class="3u 12u$(medium)">
-		<span class="image fit"><img src="{% link assets/images/portrait-3.JPG %}" alt="" /></span>
+		<span class="image fit"><img src="{% link assets/images/profile4.JPG %}" alt="" /></span>
 	</div>
 
 
 <div class="7u$ 12u$(medium)">
-	<p>I am a Ph.D. student in Civil Engineering and the Institute for Software and Integrated Systems at Vanderbilt Universtiy. I am currently researching in transportation systems with Dr. Daniel Work. I earned my B.S. degree (2018) in Civil Engineering from the University of Illinois at Urbana-Champaign. My main research focuses on traffic modeling, estimation and control, and I find probability and control theories fascinating. I am also interested in data-driven techniques for smart-city implementation. I have received the Dwight David Eisenhower Transportation Fellowship that supports my graduate studies. Please see my research page for more details.</p>
+	<p>I am a Ph.D. student in Civil Engineering and the Institute for Software and Integrated Systems at Vanderbilt University with <a href="https://lab-work.github.io/">Dr. Daniel Work</a>. I earned my B.S. degree (2018) in Civil Engineering from the University of Illinois at Urbana-Champaign. My main research focuses on traffic modeling, estimation and control, and I find probability and control theories fascinating. I have received the Dwight David Eisenhower Transportation Fellowship that supports my graduate studies. Please see my <a href="https://yanbingwang.com/research.html">research page</a> for more details.</p>
 </div>
 </div>
 
@@ -50,11 +50,11 @@ nav-menu: true
 			</li>
 			<li>Qu, Y. Wang, Y. Hu, <b>Y. Wang</b> and H. Baroud. “A data-integration analysis on road emissions and traffic patterns”. <i>Smoky Mountains Computational Sciences and Engineering Conference (SMC)</i>, 2020.
 			</li>
-			<li><b>Y. Wang</b>, G. Gunter and D. B. Work. “Online parameter estimation of adaptive cruise control models with delays and lags”, <i>2020 IEEE Intelligent Transportation Systems Conference (ITSC)</i>, Rhodes, Greece. To appear.
+			<li><b>Y. Wang</b>, G. Gunter and D. B. Work. “Online parameter estimation of adaptive cruise control models with delays and lags”, <i>IEEE Intelligent Transportation Systems Conference (ITSC)</i>, Rhodes, Greece 2020. <a href="https://ieeexplore.ieee.org/document/9294538"><em>Download</em></a>
 			</li>
-			<li><b>Y. Wang</b>, G. Gunter, M. Nice and M. L. Delle Monache and D. B. Work. “Online parameter estimation methods for adaptive cruise control systems”, 2020. In review
+			<li><b>Y. Wang</b>, G. Gunter, M. Nice and M. L. Delle Monache and D. B. Work. “Online parameter estimation methods for adaptive cruise control systems”, 2020. <a href="https://ieeexplore.ieee.org/document/9195163"><em>Download</em></a>
 			</li>
-			<li><b>Y. Wang</b> and D. B. Work, “Estimation for heterogeneous traffic using enhanced particle filters”. 2020. In review.
+			<li><b>Y. Wang</b> and D. B. Work, “Estimation for heterogeneous traffic using enhanced particle filters”. Transportmetrica A: Transport Science. doi: 10.1080/23249935.2021.18811862020. <a href="https://doi.org/10.1080/23249935.2021.1881186"><em>Download</em></a>
 			</li>
 			<li>Y. Hu, <b>Y. Wang</b>, C. Jiao, R. Sankaran, C. Catlett and D. Work. "Automatic data cleaning via tensor factorization for large urban environmental sensor networks". In the workshop <i>CCAI NeurIPS</i>, 2019. <a href="https://www.climatechange.ai/CameraReadySubmissions%202-119/68/CameraReadySubmission/NIPS2019_CC_workshop_cameraready.pdf"><em>Download</em></a>
 			</li>
@@ -76,6 +76,8 @@ nav-menu: true
 	</div>
 <div class="9u 12u$(medium)">
 	<ul class="alt">
+		<li><b>Y. Wang</b>, M.L. Delle Monache and D.B. Work. "Identifiability of car-following dynamics". <i>Transportation Research Board Annual Meeting</i> poster session, Washington, D.C., 2021.
+		</li>
 			<li>Y. Hu and <b>Y. Wang</b>. "Automatic data cleaning via tensor factorization for large urban environmental sensor networks". Tackling Climate Change with Machine Learning Workshop, <i>NeurIPS 2019.</i>
 			</li>
 			<li><b>Y. Wang</b> and G. Gunter and M. Nice. “Online parameter estimation for adaptive cruise control systems”, <i>Transportation Research Board Annual Meeting</i> poster session, Washington, D.C., 2020.</li>
