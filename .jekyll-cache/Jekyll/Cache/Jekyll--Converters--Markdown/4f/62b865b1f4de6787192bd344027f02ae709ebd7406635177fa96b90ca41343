@@ -1,4 +1,5 @@
-I"><h2>Music</h2>
+I"Š
+<h2>Music</h2>
 <blockquote>I used to play classical piano, but over the years I found myself gravitating towards minimalistic music and modern Jazz. I like music with colorful chords and rich texture. Simple melodies would be a bonus.</blockquote>
 
 <div class="row">
@@ -37,26 +38,26 @@
 
 <div class="box alt">
  	<div class="row 50% uniform">
- 		<div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-flower.jpg" alt="" /></span></div>
- 		<div class="7u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-sevier.jpg" alt="" /></span></div>
+ 		<div class="4u"><span class="image fit"><img src="/assets/images/sketch-flower.jpg" alt="" /></span></div>
+ 		<div class="7u"><span class="image fit"><img src="/assets/images/sketch-sevier.jpg" alt="" /></span></div>
 
-    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-waves.jpg" alt="" /></span></div>
-    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-lake.jpg" alt="" /></span></div>
-    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/sketch-8th.jpg" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/assets/images/sketch-waves.jpg" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/assets/images/sketch-lake.jpg" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/assets/images/sketch-8th.jpg" alt="" /></span></div>
 
-    <div class="7u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/wall-waves.JPG" alt="" /></span></div>
-    <div class="4u"><span class="image fit"><img src="/yanbingwangjekyll/assets/images/painting-boat.JPG" alt="" /></span></div>
+    <div class="7u"><span class="image fit"><img src="/assets/images/wall-waves.JPG" alt="" /></span></div>
+    <div class="4u"><span class="image fit"><img src="/assets/images/painting-boat.JPG" alt="" /></span></div>
  	</div>
  </div>
 
 <div class="row">
  <div class="4u 12u$(medium)">
-    <span class="image width: 10%"><img src="/yanbingwangjekyll/assets/images/model-1.JPG" alt="" /></span>
-    <span class="image fit"><img src="/yanbingwangjekyll/assets/images/model-2.JPG" alt="" /></span>
+    <span class="image width: 10%"><img src="/assets/images/model-1.JPG" alt="" /></span>
+    <span class="image fit"><img src="/assets/images/model-2.JPG" alt="" /></span>
  </div>
 
  <div class="8u 12u$(medium)">
-    <span class="image fit"><img src="/yanbingwangjekyll/assets/images/shuhui%20copy.jpg" alt="" /></span>
+    <span class="image fit"><img src="/assets/images/shuhui%20copy.jpg" alt="" /></span>
  </div>
 
 </div>
