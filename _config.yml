@@ -10,8 +10,8 @@ tagline:          ''
 description:      ''
 url:              https://yanb514.github.io
 
-author:           Author Lastname
-  name:           ''
+author:           
+  name:           'Author Name'
   url:
 
 paginate:         10
