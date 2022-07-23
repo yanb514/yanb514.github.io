@@ -5,13 +5,13 @@ markdown:         kramdown
 permalink:        pretty
 
 # Setup
-title:            Adaptive Cruise Control Dataset
+title:            Website Title
 tagline:          ''
 description:      ''
-url:              https://acc-dataset.github.io
+url:              https://yanb514.github.io
 
-author:
-  name:           ''
+author:           Author Lastname
+  name:           'author_name'
   url:
 
 paginate:         10
