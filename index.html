@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<!--
+<hr>
+<h1>&#8598; Click <large>&#8801;</large> to check out the project details.</h1>
+<hr>
+<br>
+-->
+
+<!-- youtube -->
+<article class="post featured">
+	<h2>Our research shows how a small number of automated vehicles can help smooth traffic jams.</h2>
+	<p>See the videos below or check out the full story in <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18301517?via%3Dihub">Transportation Research Part C: Emerging Technologies</a>. </p>
+		 <iframe width="560" height="315" src="https://www.youtube.com/embed/FW9VkoibWDw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=FW9VkoibWDw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br><br>
+		 <iframe width="560" height="315" src="https://www.youtube.com/embed/2mBjYZTeaTc?autoplay=1&amp;mute=1&amp;loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</article>
+
+<br>
+<hr>
+<br>
+
+<div class="posts">
+	{% for post in paginator.posts %}
+	<div class="post">
+		<p style="clear: both; float: left; overflow: auto;">
+			<span class="image  left" style="max-width: 200px;">
+				<img src="{{post.image}}" alt="" />
+			</span>
+		<div style="text-align: justify; overflow-x: hidden; overflow-y: hidden;">
+			<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<span class="post-date">{{ post.date | date_to_string }}</span>
+			{{ post.content }}
+		</div>
+		</p>
+	</div>
+	{% endfor %}
+</div>
+
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
+<h2>Funding:</h2>
+This material is based upon work supported by the National Science Foundation under Grants No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1446715">CNS-1446715</a> (Piccoli), <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1446690">CNS-1446690</a> (Seibold), <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1446435">CNS-1446435</a> (Lysecky and Sprinkle), and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1446702">CNS-1446702</a> (Work) through the project, <i>CPS: Synergy: Collaborative Research: Control of Vehicular Traffic Flow via Low-Density Autonomous Vehicles</i>.

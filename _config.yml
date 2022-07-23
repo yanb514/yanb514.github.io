@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         kramdown
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Adaptive Cruise Control Dataset
+tagline:          ''
+description:      ''
+url:              https://acc-dataset.github.io
+
+author:
+  name:           ''
+  url:
+
+paginate:         10
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/acc-dataset/acc-dataset.github.io
