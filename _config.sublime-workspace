@@ -1,0 +1,295 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: sftp",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"package con",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax: lat",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"package controll",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/yanbing_wang/Downloads/MOTION_YW/main.tex",
+		"/Users/yanbing_wang/Downloads/elsarticle/elsarticle-template-harv.tex",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_config.yml",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/docker-compose.yml",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2022-03-27-qualifying-exam.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2022-04-17-chatgpt.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-06-17-mentoring-undergrads.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-07-25-lacking-motivation.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-10-21-imposter-syndrome.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-05-23-marriage.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-04-25-blogger.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-04-30-internship.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-05-01-self-worth.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-04-24-phd-weekends.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-04-21-get-rich-grad-student.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_site/index.html",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/I24-postprocessing/config/parameters.json",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/I24-postprocessing/data_dump.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/i24_visualizer/ts_gen.py",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_layouts/default.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2018-04-19-solitude.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_includes/tracking-footer.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_includes/tracking-header.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2022-01-18-chirping.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2022-01-01-readings-2021.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_pages/about.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2021-05-11-breakfast-club.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2018-05-10-buena-vista.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_layouts/page-sidebar.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2019-01-18-welcome.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/index.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_pages/categories.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_layouts/post.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2018-04-18-pilot.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_pages/powerhouse.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2020-04-18-becoming.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_posts/2019-01-25-press-and-education.md",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/_site/author-jane.html",
+		"/Users/yanbing_wang/Documents/github_web/theoffbeatphd/theoffbeatphd.github.io/Gemfile.lock",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2c20796d-62ee-44d9-aed8-51bfa992f6b8/home/i24/Documents/i24_overhead_visualizer/dash_unsup_stats.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/run_tm.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/trajectory-eval-toolkit-main/evaluate_ICCV.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/i24_overhead_visualizer/time_space.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/I24-postprocessing/_evaluation/unsup_statistics1.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/3d9167b1-fa6c-46bc-aedd-c6196f8bb79e/remote/i24_code/I24-postprocessing/run_tm.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/utils/utils_mcf.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/merge.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/data_feed.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/utils/utils_opt.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/pp1_local.py",
+		"/private/var/folders/jb/tdn7lbc95fg55fm5h5x_pbvh0000gn/T/ch.sudo.cyberduck/2ade523d-624e-4f24-8e06-7db385af297d/remote/i24_code/I24-postprocessing/_evaluation/unsup_statistics1.py",
+		"/Users/yanbing_wang/Documents/Research/I24/I24-postprocessing/config/parameters.json",
+		"/Users/yanbing_wang/Documents/Research/MERL/MERL_CODE/vehicle_sim/half-car-master/main_multiple.py",
+		"/Users/yanbing_wang/Documents/Research/I24/I24 MOTION - system paper/table_wave.tex",
+		"/Volumes/YanbingSSD/MVT2022_timeindexed/schema.json",
+		"/Users/yanbing_wang/Documents/Research/I24/I24 MOTION - system paper/draft.pdf",
+		"/Users/yanbing_wang/Documents/Research/Lit-review/pnas/draft.tex",
+		"/Users/yanbing_wang/Documents/Research/I24/submission/arxiv/v2.tex",
+		"/Users/yanbing_wang/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 309.0
+	},
+	"pinned_build_system": "",
+	"project": "_config.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 356.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
