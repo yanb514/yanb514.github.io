@@ -1,0 +1,123 @@
+---
+title: "Home"
+layout: default
+pagination:
+enabled: true
+description: ""
+---
+<div class="container">
+{% if page.url == "/" %}
+<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
+{% for post in site.posts %} 
+{% if post.tags contains "sticky" %}
+<!-- <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+   <div class="pl-4 pr-0 h-100 tofront">
+       <div class="row justify-content-between">
+           <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+               <h1 class="mb-3">{{post.title}}</h1>
+               <p class="mb-3 lead">
+                   {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+               </p>
+               <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+           </div>
+           <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});"> 
+           </div>
+       </div>
+   </div>
+   </div>  -->
+<div class="jumbotron jumbotron-fluid jumbotron-home pt-5 pb-5 mt-3 mb-2rem position-relative overlay overlay-black" style="background-image: url({{site.baseurl}}/{{ post.image }}); background-size: cover; background-position: center;">
+   <div class="pl-4 pr-0 h-100 tofront">
+      <div class="row justify-content-between">
+         <div class="col-md-5 pt-3 pb-6 pr-lg-7 align-self-center text-white">
+            <h1 class="mb-3">{{post.title}}</h1>
+            <p class="mb-3 lead">
+               {{ post.excerpt | strip_html | strip_newlines }}
+            </p>
+            <!-- <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a> -->
+         </div>
+      </div>
+   </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %} 
+<div class="text-center mt-4"  style="margin-top: 100px; margin-bottom: 100px;">
+   <h2>Welcome</h2>
+   <p style="font-size: 20px;">I am a postdoctoral researcher at Argonne National Lab Vehicle Mobility Group. I completed my PhD at Vanderbilt University under the guidance of Professor Dan Work. My research interests lie in leveraging efficient computational methods and data analytics to uncover traffic patterns and inform transportation decision-making at different scales. My goal is to enhance traffic corridor management through the integration of empirical traffic data with modeling and control theories. For more information, please refer to my <a href="{{site.baseurl}}cv.html">CV</a>.</p>
+   <div class="sticky-top-offset">
+      <a href="https://www.linkedin.com/in/yanbing-wang/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+      <a href="https://github.com/yanb514" target="_blank"><img src="assets/images/github.png" alt="github.png" style="width: 30px; height: 30px;"></a>
+      <a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank"><img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px;"></a>
+      <a href="https://soundcloud.com/yanbingwang" target="_blank"><img src="assets/images/soundcloud-logo.png" alt="soundcloud" style="width: 30px; height: 30px;"></a>
+   </div>
+</div>
+<br>
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+<div class="row mt-3">
+   <div class="col-md-8 main-loop">
+      <!-- Latest news -->
+      <h2 class="font-weight-bold spanborder"><span>Latest News</span></h2>
+      <div class="container">
+         <div class="row gap-y "  style="margin-bottom: -20px;">
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+            {% if post.categories contains "news" %}
+            {% if count < 6 %}
+            <div class="col-lg-4 mb-4">
+               <a href="{{site.baseurl}}{{post.url}}">
+               <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" style="width: 100%; height: 250px; object-fit: cover;">
+               </a>
+               <h4 class="mb-1 h4 font-weight-bold">
+                  <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+               </h4>
+               <small class="text-muted">
+               {{ post.date | date: '%b %d, %Y' }}
+               </small>
+            </div>
+            {% endif %}
+            {% assign count = count | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+         </div>
+         {% if count > 6 %}
+         <div class="text-center mt-4">
+            <a href="{{site.baseurl}}/news.html" class="btn btn-outline-primary"  style="margin-bottom: 100px;">Read All News</a>
+         </div>
+         {% endif %}
+         <br>
+         <h2 class="font-weight-bold spanborder"><span>Research Highlights</span></h2>
+         <div class="container">
+            <div class="row justify-content-center">
+               {% assign count = 0 %}
+               {% for tag in site.tags %} 
+               <p></p>
+               {% if tag[0] == "project" %}
+               <p></p>
+               {% assign pages_list = tag[1] %}
+               {% for post in pages_list %}
+               <p></p>
+               {% if count < 4 %}
+               {% if group == null or group == post.group %}
+               <p></p>
+               {% include main-loop-card.html %}
+               {% endif %}
+               {% endif %}
+               {% assign count = count | plus: 1 %}
+               {% endfor %}
+               {% assign pages_list = nil %}
+               {% assign group = nil %}
+               {% endif %}
+               {% endfor %}
+            </div>
+            {% if count > 3 %}
+            <div class="text-center mt-4">
+               <a href="{{site.baseurl}}/projects.html" class="btn btn-outline-primary">Read All Projects</a>
+            </div>
+            {% endif %}
+         </div>
+         <div style="padding-top: 120px;">
+            <!-- Content here -->
+         </div>
+      </div>
+   </div>
+</div>
