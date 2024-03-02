@@ -1,0 +1,31 @@
+<style>
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 30%; /* Adjust the width as needed */
+        margin-bottom: 10px; /* Add margin between items */
+    }
+</style>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="content-wrapper">   
+            <div class="content">
+                <a href="{{ post.url }}">
+                    <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" style="width: 100%;">
+                </a>
+                <h2 class="mb-1 h4 font-weight-bold">
+                    <a class="text-dark" href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                <small class="text-muted">
+                    {{ post.date | date: '%b %d, %Y' }}
+                </small>
+            </div>
+        </div>
+    </div>
+</div>

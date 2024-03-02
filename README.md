@@ -1,73 +1,51 @@
-# Forty - Jekyll Theme
+# Jekyll Theme - Mundana by WowThemes.net
 
-A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
+[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
+[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
+[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/mundana-theme-jekyll/) &nbsp; | &nbsp; 
+[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
 
-![Forty Theme](assets/images/forty.jpg "Forty Theme")
+![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
 
-# How to Use
+### Documentation
 
-For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
-and [creating pages](https://jekyllrb.com/docs/pages/).
+[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
 
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this repository and create a branch named `gh-pages`, then start editing the `_config.yml` file.
+### Contribute to Mundana repository
 
-# Added Features
+1. In the top-right corner of this page, click **Fork**.
 
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
-* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
-* Set **featured images** in front matter.
+2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
 
-# Issues
+   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
 
-If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/forty-jekyll-theme) and I will be more than happy to help!
+3. **Create a branch**: 
 
-Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com).
+   `git checkout -b <my-new-feature-or-fix>`
 
-The GitHub repository is simply a mirror of the GitLab repository.
+4. **Make necessary changes and commit those changes**:
 
-# Credits
+   `git add .`
 
-Original README from HTML5 UP:
+   `git commit -m "new feature or fix"`
 
-```
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
 
+   `git push origin <add-your-branch-name>`
 
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
+6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
+That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
 
 
-Credits:
+### Copyright
 
-	Demo Images:
-		Unsplash (unsplash.com)
+Copyright (C) 2019 WowThemes.net.
 
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
 
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		background-size polyfill (github.com/louisremi)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
-```
+<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+### Live Demo
+
+[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)

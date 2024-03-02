@@ -1,39 +1,65 @@
-# site settings
-title: Yanbing Wang
-subtitle:
-email: yanb0514@gmail.com
-description: A transportation researcher.
-# baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-# url: # the base hostname & protocol for your site
+# Site
+name: 'Yanbing Wang'
+description: ''
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+disqus: ''
+email: ''
+mailchimp-list: ''
 
-url: "https://yanbingwang.com"
-baseurl: 
-author:
-street_address: 1025 16th Ave S
-city: Nashville
-state: TN
-zip_code: 37212
-country: United States of America
-# phone: (716) 555-5555
+include: ["_pages"]
+permalink: /:title/
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    sal:
+      name:           Sal
+      site:           https://www.wowthemes.net
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+      email:          wowthemesnet@gmail.com
+      twitter:        https://twitter.com/wowthemesnet
 
-# social settings
-500px_url:
-facebook_url:
-github_url:
-gitlab_url:
-googleplus_url:
-instagram_url: "https://www.instagram.com/simptuen/"
-linkedin_url: "https://www.linkedin.com/in/yanbing-wang/"
-pinterest_url:
-slack_url:
-twitter_url:
+    jane:
+      name:           Yanbing Wang
+      site:           
+      avatar:         /assets/images/prof1_crop.jpeg
+      bio:            ""
+      email:          yanb0514@gmail.com
+      twitter:        
+ 
+# Defaults
+defaults:
 
-# build settings
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: sal
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
 markdown: kramdown
+highlighter: rouge
 
-sass:
-  style: compressed
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
