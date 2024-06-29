@@ -10,8 +10,7 @@ Vehicle trajectory data has received increasing research attention over the past
 
 ![alt text](../assets/images/ts.png)*Time-space diagram for four hours of I-24 westbound morning rush hour traffic on Nov 25, 2022, generated from I-24 MOTION vehicle trajectories. x-axis: time of day (HH:MM); y-axis roadway postmile (mi). Data postprocessing can reconstruct feasible microscopic traffic dynamics.*
 
-I’ve been writing a lot of code:
 
-A real-time trajectory postprocessing pipeline for [I-24 MOTION project][i-24motion].
+For more information, visit [I-24 MOTION project][i-24motion].
 
 [i-24motion]: https://i24motion.org

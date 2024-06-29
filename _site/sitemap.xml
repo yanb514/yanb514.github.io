@@ -113,4 +113,12 @@
 <url>
 <loc>http://localhost:4000/page2/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/assets/documents/Recruitment.pdf</loc>
+<lastmod>2024-06-29T17:29:35-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/documents/YanbingWang_Curriculum_Vitae.pdf</loc>
+<lastmod>2024-06-29T17:41:49-05:00</lastmod>
+</url>
 </urlset>
