@@ -31,10 +31,10 @@ a,a:hover {
 	text-decoration:none;
 }
 a {
-	color:#03a87c;
+	color:#45818e;
 }
 a.text-dark:hover {
-	color:#03a87c !important;
+	color:#45818e !important;
 }
 .c-pointer:hover {
 	cursor:pointer;
@@ -633,7 +633,7 @@ ol.list-featured li:before {
     line-height: 1;
     opacity: .1;
 }
-.catlist .sep:last-child {
+.catlist .sep:last-child {excerpt
 	display:none;
 }
 footer {
@@ -650,6 +650,7 @@ footer {
 .excerpt {
     color: rgba(0,0,0,0.59);
     margin-top:10px;
+    margin-bottom:-20px;
 }
 article {
 	font-size:20px;

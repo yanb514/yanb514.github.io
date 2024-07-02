@@ -2,7 +2,7 @@
 layout: post
 title:  "Identifiability of car-following dynamics"
 categories: []
-image: assets/images/contour_CTHRV_1.webp
+image: assets/images/contour_CTHRV_1.jpg
 tags: [project]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The world largest traffic dataset is captured by I24-MOTION"
+title:  "I24-MOTION captured its first high-density freeway traffic data"
 categories: [ news]
 image: assets/images/videowall.jpg
 ---

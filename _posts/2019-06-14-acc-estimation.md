@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Estimating adaptive cruise control model parameters from on-board radar units"
-categories: [ ]
+title:  "Learning adaptive cruise control driving behavior from on-board radar units"
+categories: [featured]
 image: assets/images/radars.png
 tags: [project]
 ---
