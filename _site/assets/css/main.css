@@ -50,6 +50,7 @@
 
 html {
   font-family: sans-serif;
+  /*font-family: "Merriweather", serif;*/
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -65,7 +66,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   zoom: 75%;
   margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", "Arial";
+  /*font-family: "Segoe UI", "Helvetica Neue", "Arial";*/
+  font-family: "Merriweather", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -83,11 +85,17 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;  
+  /*font-family: "Merriweather", serif;*/
+}
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  /*margin-bottom: 1rem; */
+  font-size: 18pt;
+  /*font-family: "EB Garamond", serif;*/
+  font-family: "Merriweather", serif;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -312,7 +320,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  /*font-family: inherit;*/
+  font-family: "Merriweather", serif;
   font-weight: 500;
   line-height: 1.2;
   color: inherit; }
