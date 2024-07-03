@@ -64,7 +64,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-  zoom: 75%;
+  zoom: 100%;
   margin: 0;
   /*font-family: "Segoe UI", "Helvetica Neue", "Arial";*/
   font-family: "Merriweather", serif;
@@ -85,13 +85,13 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;  
+  margin-bottom: 1rem;  
   /*font-family: "Merriweather", serif;*/
 }
 
 p {
   margin-top: 0;
-  font-size: 18pt;
+  font-size: 1.2rem;
   /*font-family: "EB Garamond", serif;*/
   font-family: "Merriweather", serif;
 }
@@ -139,7 +139,7 @@ strong {
   font-weight: bolder; }
 
 small {
-  font-size: 50%; }
+  font-size: 1rem; }
 
 sub,
 sup {
@@ -375,9 +375,9 @@ hr {
 
 small,
 .small {
-  font-size: 70%;
+  font-size: 0.8rem;
   font-weight: 100; 
-  margin-top: 1rem;}
+  margin-top: 1.2rem;}
 
 mark,
 .mark {
