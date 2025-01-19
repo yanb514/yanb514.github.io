@@ -205,7 +205,8 @@ a.text-dark:hover {
 .navbar-brand {
 	margin-right:2rem;
 	font-size:1.55rem;
-    font-family:"Georgia","Times New Roman",serif;
+    /* font-family:"Georgia","Times New Roman",serif; */
+	font-family: 'Roboto Condensed', sans-serif;
 }
 .dropdown-item {
 	font-weight:400;
@@ -297,7 +298,8 @@ a.text-dark:hover {
 		right:0;
 	}
     .jumbotron-home h1 {
-        font-family: Georgia,Times,"Times New Roman",serif;
+        /* font-family: Georgia,Times,"Times New Roman",serif; */
+		font-family: 'Roboto Condensed', sans-serif;
         font-size: 2.0rem;
         font-weight: 500;
         line-height: 1.1;
@@ -633,7 +635,7 @@ ol.list-featured li:before {
     line-height: 1;
     opacity: .1;
 }
-.catlist .sep:last-child {excerpt
+.catlist .sep:last-child {
 	display:none;
 }
 footer {
@@ -655,10 +657,11 @@ footer {
 article {
 	font-size:20px;
 	line-height:1.86;
-    font-family:Lora;
+    /* font-family:Lora; */
 }
 .article-headline {
-    font-family: Georgia,Times,"Times New Roman",serif;
+    /* font-family: Georgia,Times,"Times New Roman",serif; */
+	font-family: 'Roboto Condensed', sans-serif;
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 1.15;
@@ -675,7 +678,7 @@ article blockquote {
 }
 article blockquote:before {
 	content:"“";
-	font-family:Georgia;
+	/* font-family:Georgia; */
 	font-size:8rem;
 	margin:-1rem 2rem 0 -3.9rem;
 	position:absolute;

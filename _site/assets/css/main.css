@@ -40,8 +40,9 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Segoe UI", "Helvetica Neue", "Arial";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-sans-serif: "Roboto", "Segoe UI", "Helvetica Neue", "Arial";
+  /* --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  */
+}
 
 *,
 *::before,
@@ -49,8 +50,9 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
-  /*font-family: "Merriweather", serif;*/
+  /* font-family: "Roboto"; */
+  font-family: 'Noto Sans', sans-serif;
+  /*font-family: "Merriweather", serif, sans-serif;*/
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -66,8 +68,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   zoom: 100%;
   margin: 0;
-  /*font-family: "Segoe UI", "Helvetica Neue", "Arial";*/
-  font-family: "Merriweather", serif;
+  font-family: 'Noto Sans', sans-serif;
+  /*font-family: "Segoe UI", "Helvetica Neue", "Arial"; "Merriweather", serif;*/
+  /* font-family: "Merriweather"; */
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -86,14 +89,15 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;  
-  /*font-family: "Merriweather", serif;*/
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: "Merriweather", serif;
 }
 
 p {
   margin-top: 0;
-  font-size: 1.2rem;
-  /*font-family: "EB Garamond", serif;*/
-  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  /*font-family: "EB Garamond", serif;"Merriweather", serif;*/
+  font-family: 'Noto Sans', sans-serif;
 }
 
 abbr[title],
@@ -176,7 +180,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
   font-size: 1em; }
 
 pre {
@@ -319,8 +323,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  /*font-family: inherit;*/
-  font-family: "Merriweather", serif;
+  /* font-family: inherit; */
+  font-family: 'Roboto Condensed', sans-serif; 
   font-weight: 500;
   line-height: 1.2;
   color: inherit; }
