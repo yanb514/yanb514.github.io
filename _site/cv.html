@@ -128,12 +128,12 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/cv.html",
     "title": "Curriculum Vitae",
-    "body": "              &lt;!DOCTYPE html&gt;                                                                      "
+    "body": "         &lt;!DOCTYPE html&gt;                             PDF Preview                      Download CV                                                      "
     }, {
     "id": 4,
     "url": "http://localhost:4000/",
     "title": "Yanbing Wang",
-    "body": "{% if page. url ==  /  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                                            {{page. title}}:                              I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the Transportation and Power Systems (TAPS) division at Argonne National Laboratory. I earned my Ph. D. from the Institute for Software Integrated Systems at Vanderbilt University under the guidance of Professor Dan Work, where I also served as a Research Engineer.                              I am a five-time recipient of the prestigious Dwight D. Eisenhower Transportation Fellowship awarded by the Federal Highway Administration (FHWA) and was recognized as a Cyber-Physical Systems (CPS) Rising Star by the University of Virginia Link Lab in 2023. I also held research internship positions at Toyota Infotech Labs and Mitsubishi Electric Research Laboratories (MERL), and was a visiting researcher at the Institute for Pure &amp; Applied Mathematics (IPAM) at UCLA.                              My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.                   &lt;/p&gt;          {{ site. authors. sal. bio }}                                                                                                                                               {% endif %}{% endfor %}{% endif %}     My lab has openings for self-driven and passionate PhD/MS students.   If you are interested in working with me, please fill out this form.          Latest News:              {% assign count = 0 %}      {% for post in site. posts %}      {% if post. categories contains  news  %}      {% if count &lt; 6 %}                       {% if post. image contains  ://  %}                     {% else %}                     {% endif %}                         {{ post. title }}                       {{ post. date | date: '%b %d, %Y' }}                    {% endif %}      {% assign count = count | plus: 1 %}      {% endif %}      {% endfor %}         {% if count &gt; 6 %}           Read All News         {% endif %}         Research Highlights:                  {% assign count = 0 %}               {% for post in site. posts %}                 {% if post. categories[0] ==  featured  %}                     {% if count &lt; 4 %}                         {% include main-loop-card. html%}                           {% assign count = count | plus: 1 %}           {% endif %}         {% endif %}       {% endfor %}           {% if count &gt; 3 %}              Read All Projects            {% endif %}                        "
+    "body": "{% if page. url ==  /  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                                {{page. title}}:                              I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the Transportation and Power Systems (TAPS) division at Argonne National Laboratory. I earned my Ph. D. from the Institute for Software Integrated Systems at Vanderbilt University under the guidance of Professor Dan Work, where I also served as a Research Engineer.                              I am a five-time recipient of the prestigious Dwight D. Eisenhower Transportation Fellowship awarded by the Federal Highway Administration (FHWA) and was recognized as a Cyber-Physical Systems (CPS) Rising Star by the University of Virginia Link Lab in 2023. I also held research internship positions at Toyota Infotech Labs and Mitsubishi Electric Research Laboratories (MERL), and was a visiting researcher at the Institute for Pure &amp; Applied Mathematics (IPAM) at UCLA.                              My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.                   &lt;/p&gt;          {{ site. authors. sal. bio }}                                                                                               {% endif %}{% endfor %}{% endif %}     My lab has openings for self-driven and passionate PhD/MS students.   If you are interested in working with me, please fill out this form.          Latest News:              {% assign count = 0 %}      {% for post in site. posts %}      {% if post. categories contains  news  %}      {% if count &lt; 6 %}                       {% if post. image contains  ://  %}                     {% else %}                     {% endif %}                         {{ post. title }}                       {{ post. date | date: '%b %d, %Y' }}                    {% endif %}      {% assign count = count | plus: 1 %}      {% endif %}      {% endfor %}         {% if count &gt; 6 %}           Read All News         {% endif %}         Research Highlights:                  {% assign count = 0 %}               {% for post in site. posts %}                 {% if post. categories[0] ==  featured  %}                     {% if count &lt; 4 %}                         {% include main-loop-card. html%}                           {% assign count = count | plus: 1 %}           {% endif %}         {% endif %}       {% endfor %}           {% if count &gt; 3 %}              Read All Projects            {% endif %}                        "
     }, {
     "id": 5,
     "url": "http://localhost:4000/news.html",
@@ -158,12 +158,12 @@ var documents = [{
     "id": 9,
     "url": "http://localhost:4000/page2/",
     "title": "Yanbing Wang",
-    "body": "{% if page. url ==  /  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                                            {{page. title}}:                              I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the Transportation and Power Systems (TAPS) division at Argonne National Laboratory. I earned my Ph. D. from the Institute for Software Integrated Systems at Vanderbilt University under the guidance of Professor Dan Work, where I also served as a Research Engineer.                              I am a five-time recipient of the prestigious Dwight D. Eisenhower Transportation Fellowship awarded by the Federal Highway Administration (FHWA) and was recognized as a Cyber-Physical Systems (CPS) Rising Star by the University of Virginia Link Lab in 2023. I also held research internship positions at Toyota Infotech Labs and Mitsubishi Electric Research Laboratories (MERL), and was a visiting researcher at the Institute for Pure &amp; Applied Mathematics (IPAM) at UCLA.                              My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.                   &lt;/p&gt;          {{ site. authors. sal. bio }}                                                                                                                                               {% endif %}{% endfor %}{% endif %}     My lab has openings for self-driven and passionate PhD/MS students.   If you are interested in working with me, please fill out this form.          Latest News:              {% assign count = 0 %}      {% for post in site. posts %}      {% if post. categories contains  news  %}      {% if count &lt; 6 %}                       {% if post. image contains  ://  %}                     {% else %}                     {% endif %}                         {{ post. title }}                       {{ post. date | date: '%b %d, %Y' }}                    {% endif %}      {% assign count = count | plus: 1 %}      {% endif %}      {% endfor %}         {% if count &gt; 6 %}           Read All News         {% endif %}         Research Highlights:                  {% assign count = 0 %}               {% for post in site. posts %}                 {% if post. categories[0] ==  featured  %}                     {% if count &lt; 4 %}                         {% include main-loop-card. html%}                           {% assign count = count | plus: 1 %}           {% endif %}         {% endif %}       {% endfor %}           {% if count &gt; 3 %}              Read All Projects            {% endif %}                        "
+    "body": "{% if page. url ==  /  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                                {{page. title}}:                              I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the Transportation and Power Systems (TAPS) division at Argonne National Laboratory. I earned my Ph. D. from the Institute for Software Integrated Systems at Vanderbilt University under the guidance of Professor Dan Work, where I also served as a Research Engineer.                              I am a five-time recipient of the prestigious Dwight D. Eisenhower Transportation Fellowship awarded by the Federal Highway Administration (FHWA) and was recognized as a Cyber-Physical Systems (CPS) Rising Star by the University of Virginia Link Lab in 2023. I also held research internship positions at Toyota Infotech Labs and Mitsubishi Electric Research Laboratories (MERL), and was a visiting researcher at the Institute for Pure &amp; Applied Mathematics (IPAM) at UCLA.                              My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.                   &lt;/p&gt;          {{ site. authors. sal. bio }}                                                                                               {% endif %}{% endfor %}{% endif %}     My lab has openings for self-driven and passionate PhD/MS students.   If you are interested in working with me, please fill out this form.          Latest News:              {% assign count = 0 %}      {% for post in site. posts %}      {% if post. categories contains  news  %}      {% if count &lt; 6 %}                       {% if post. image contains  ://  %}                     {% else %}                     {% endif %}                         {{ post. title }}                       {{ post. date | date: '%b %d, %Y' }}                    {% endif %}      {% assign count = count | plus: 1 %}      {% endif %}      {% endfor %}         {% if count &gt; 6 %}           Read All News         {% endif %}         Research Highlights:                  {% assign count = 0 %}               {% for post in site. posts %}                 {% if post. categories[0] ==  featured  %}                     {% if count &lt; 4 %}                         {% include main-loop-card. html%}                           {% assign count = count | plus: 1 %}           {% endif %}         {% endif %}       {% endfor %}           {% if count &gt; 3 %}              Read All Projects            {% endif %}                        "
     }, {
     "id": 10,
     "url": "http://localhost:4000/page3/",
     "title": "Yanbing Wang",
-    "body": "{% if page. url ==  /  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                                            {{page. title}}:                              I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the Transportation and Power Systems (TAPS) division at Argonne National Laboratory. I earned my Ph. D. from the Institute for Software Integrated Systems at Vanderbilt University under the guidance of Professor Dan Work, where I also served as a Research Engineer.                              I am a five-time recipient of the prestigious Dwight D. Eisenhower Transportation Fellowship awarded by the Federal Highway Administration (FHWA) and was recognized as a Cyber-Physical Systems (CPS) Rising Star by the University of Virginia Link Lab in 2023. I also held research internship positions at Toyota Infotech Labs and Mitsubishi Electric Research Laboratories (MERL), and was a visiting researcher at the Institute for Pure &amp; Applied Mathematics (IPAM) at UCLA.                              My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.                   &lt;/p&gt;          {{ site. authors. sal. bio }}                                                                                                                                               {% endif %}{% endfor %}{% endif %}     My lab has openings for self-driven and passionate PhD/MS students.   If you are interested in working with me, please fill out this form.          Latest News:              {% assign count = 0 %}      {% for post in site. posts %}      {% if post. categories contains  news  %}      {% if count &lt; 6 %}                       {% if post. image contains  ://  %}                     {% else %}                     {% endif %}                         {{ post. title }}                       {{ post. date | date: '%b %d, %Y' }}                    {% endif %}      {% assign count = count | plus: 1 %}      {% endif %}      {% endfor %}         {% if count &gt; 6 %}           Read All News         {% endif %}         Research Highlights:                  {% assign count = 0 %}               {% for post in site. posts %}                 {% if post. categories[0] ==  featured  %}                     {% if count &lt; 4 %}                         {% include main-loop-card. html%}                           {% assign count = count | plus: 1 %}           {% endif %}         {% endif %}       {% endfor %}           {% if count &gt; 3 %}              Read All Projects            {% endif %}                        "
+    "body": "{% if page. url ==  /  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                                {{page. title}}:                              I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the Transportation and Power Systems (TAPS) division at Argonne National Laboratory. I earned my Ph. D. from the Institute for Software Integrated Systems at Vanderbilt University under the guidance of Professor Dan Work, where I also served as a Research Engineer.                              I am a five-time recipient of the prestigious Dwight D. Eisenhower Transportation Fellowship awarded by the Federal Highway Administration (FHWA) and was recognized as a Cyber-Physical Systems (CPS) Rising Star by the University of Virginia Link Lab in 2023. I also held research internship positions at Toyota Infotech Labs and Mitsubishi Electric Research Laboratories (MERL), and was a visiting researcher at the Institute for Pure &amp; Applied Mathematics (IPAM) at UCLA.                              My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.                   &lt;/p&gt;          {{ site. authors. sal. bio }}                                                                                               {% endif %}{% endfor %}{% endif %}     My lab has openings for self-driven and passionate PhD/MS students.   If you are interested in working with me, please fill out this form.          Latest News:              {% assign count = 0 %}      {% for post in site. posts %}      {% if post. categories contains  news  %}      {% if count &lt; 6 %}                       {% if post. image contains  ://  %}                     {% else %}                     {% endif %}                         {{ post. title }}                       {{ post. date | date: '%b %d, %Y' }}                    {% endif %}      {% assign count = count | plus: 1 %}      {% endif %}      {% endfor %}         {% if count &gt; 6 %}           Read All News         {% endif %}         Research Highlights:                  {% assign count = 0 %}               {% for post in site. posts %}                 {% if post. categories[0] ==  featured  %}                     {% if count &lt; 4 %}                         {% include main-loop-card. html%}                           {% assign count = count | plus: 1 %}           {% endif %}         {% endif %}       {% endfor %}           {% if count &gt; 3 %}              Read All Projects            {% endif %}                        "
     }, {
     "id": 11,
     "url": "http://localhost:4000/corridor-calibration/",
@@ -375,268 +375,46 @@ function lunr_search(term) {
    <div class="row justify-content-center">
       <div class="col-md-12">
 
-         <!-- <div class="text-center mt-4">
-           <a href="assets/documents/YanbingWang_Curriculum_Vitae.pdf" class="btn btn-outline-primary" style="margin-bottom: 100px;" target="_blank">Download CV</a>
-         </div> -->
 
          <!DOCTYPE html>
          <html lang="en">
-         <!-- <head>
+         <head>
              <meta charset="UTF-8">
-             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
              <title>PDF Preview</title>
-         </head> -->
+             <style>
+                 body, html {
+                     margin: 0;
+                     padding: 50px;
+                     height: 100%;
+                 }
+                 .pdf-container {
+                     width: 100%;
+                     height: 100vh; /* Full viewport height */
+                     overflow: hidden; /* Prevent any overflow */
+                 }
+                 iframe {
+                     width: 100%;
+                     height: 100%;
+                     border: none;
+                     display: block; /* Remove any default inline spacing */
+                     margin: 0; /* Eliminate margin on all sides */
+                     padding: 0; /* Eliminate padding */
+               }
+             </style>
+         </head>
          <body>
-             <h1>  </h1>
-             <p>    </p>
-             <iframe 
-             src="assets/documents/YanbingWang_Curriculum_Vitae.pdf#toolbar=1&navpanes=0&scrollbar=0&zoom=full-page" 
-                 width="100%" 
-                 height="400%" 
-                 style="border: none;">
-             </iframe>
+            <p> <a href="assets/documents/YanbingWang_Curriculum_Vitae.pdf">Download CV</a> </p>
+             <div class="pdf-container">
+               <iframe 
+               src="assets/documents/YanbingWang_Curriculum_Vitae.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width" 
+               frameborder="0">
+           </iframe>
+             </div>
          </body>
          </html>
-
-
-
-
-
-
-
-
          <br>
-
-         <!-- <h4 class="font-weight-bold spanborder"><span>Experience</span></h4>
-         <p>
-         <ul data-block-type="core">
-            <li data-block-type="core">
-               <strong>Arizona State University</strong>, Tempe AZ (2025 -)
-               <ul data-block-type="core">
-                  <li data-block-type="core"><em>Assistant Professor</em>, School of Sustainable Engineering and the Built Environment (SSEBE)</li>
-               </ul>
-            </li>
-            <li data-block-type="core">
-               <strong>Argonne National Laboratory</strong>, Lemont IL (2024)
-               <ul data-block-type="core">
-                  <li data-block-type="core"><em>Postdoctoral Researcher</em>, Transportation and Power Systems</li>
-               </ul>
-            </li>
-            <li data-block-type="core">
-               <strong>Vanderbilt University</strong>, Nashville TN (2018-2023)
-               <ul data-block-type="core">
-                  <li data-block-type="core"><em>Research Engineer</em>, Institute for Software Integrated Systems</li>
-                  <li data-block-type="core"><em>Research Assistant</em>, Institute for Software Integrated Systems (Advisor: Prof. Daniel Work)</li>
-               </ul>
-            </li>
-            <li data-block-type="core">
-               <strong>Mitsubishi Electric Research Laboratories</strong>, Cambridge MA (2023)
-               <ul data-block-type="core">
-                  <li data-block-type="core"><em>Research Intern</em> at Control for Autonomy Group (Mentor: Dr. Marcel Menner)</li>
-               </ul>
-            </li>
-            <li data-block-type="core">
-               <strong>Toyota North America</strong>, Mountainview CA (2021)
-               <ul data-block-type="core">
-                  <li data-block-type="core"><em>Research Intern</em> at the Infotech Labs (Mentor: Dr. Kyungtae Han and <a href="https://ziranw.github.io/">Dr. Ziran Wang</a>)</li>
-               </ul>
-            <li data-block-type="core">
-               <strong>NetMath, </strong>Urbana IL (2018)
-               <ul data-block-type="core">
-                  <li data-block-type="core"><em>Instructor for Differential Equation</em></li>
-               </ul>
-            </li>
-         </ul>
-         </p>
          <br>
-
-
-
-         <h4 class="font-weight-bold spanborder"><span>Education</span></h4>
-            <p>
-               <ul data-block-type="core">
-               <li data-block-type="core">
-                  Ph.D. in Civil & Environmental Engineering, Vanderbilt University (2023)
-                  <ul data-block-type="core">
-                     <li data-block-type="core">Dissertation: <a href="hhttps://ir.vanderbilt.edu/handle/1803/18568"><em>Reconstruction of mixed traffic dynamics at micro and macro scales</em></a></li>
-                  </ul>
-               </li>
-               <li>
-                  B.S. in Civil & Environmental Engineering, University of Illinois at Urbana-Champaign (2018)
-               </li>
-               </ul>
-            </p>
-         <br>
-
-
-
-
-
-         <h4 class="font-weight-bold spanborder"><span>Publication</span></h4>
-         <p>
-         <h5 class="wp-block-heading" data-block-type="core">Journal Articles</h5>
-         <ul data-block-type="core">
-
-
-           <li data-block-type="core"><strong>Y. Wang</strong>, D. Gloudemans, J. Ji, Z.N. Teoh, L. Liu, G. Zachár, W. Barbour, and D. Work, “Automatic vehicle trajectory data reconstruction at scale,” <em>Transportation Research Part C: Emerging Technologies</em>, vol. 160, p. 104520, 2024. <em><a href="https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400041X">Available online</a></em>, <em><a href="https://arxiv.org/abs/2212.07907">Preprint</a></em></li>
-
-            <li data-block-type="core">D. Gloudemans, <strong>Y. Wang</strong>, J. Ji, G. Zachar, W. Barbour, E. Hall, M. Cebelak, L. Smith, and D. Work, “I-24 MOTION: An instrument for freeway traffic science,” <em>Transportation Research Part C: Emerging Technologies</em>, vol. 155, p. 104311, 2023. <em><a href="https://doi.org/10.1016/j.trc.2023.104311">Available online</a></em>, <em><a href="https://arxiv.org/abs/2301.11198">Preprint</a></em></li>
-
-            <li data-block-type="core">P. Choobchian, G. Roscoe, T. Dick, B. Zou, D. Work, K. Zhang, <strong>Y. Wang</strong>, and Y.C. Hung, “Leveraging connected vehicle platooning technology to improve the efficiency and effectiveness of train fleeting under moving blocks”, <em>Transportation Research Part C: Emerging Technologies</em>, vol. 148, p. 104 026, 2023, issn: 0968-090X. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0968090X23000153"><em>Available online</em></a></li>
-
-
-            <li data-block-type="core">Y. Hu, A. Qu, <strong>Y. Wang</strong>, and D. Work, “Streaming data preprocessing via online tensor recovery for large environmental sensor networks”, <em>ACM Transactions on Knowledge Discovery from Data (TKDD)</em>, vol. 16, no. 6, pp. 1–24, 2022. <em><a href="https://dl.acm.org/doi/abs/10.1145/3532189">Available online</a></em>, <em><a href="https://lab-work.github.io/download/HuStreaming2021.pdf">Preprint</a></em></li>
-            
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, Z. Wang, K. Han, P. Tiwari and D. Work, “Gaussian Process-based personalized adaptive cruise control”, <em>IEEE Transactions on Intelligent Transportation Systems</em>, vol. 23, no. 11, pp. 21178-21189, 2022. <em><a href="https://ieeexplore.ieee.org/document/9774935" target="_blank" rel="noreferrer noopener">Available online</a></em>, <em><a href="https://lab-work.github.io/download/wang2021gppacc.pdf">Preprint</a></em></li>
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, M.L. Delle Monache, and D. Work, “Identifiability of car-following dynamics,” <em>Physica D: Nonlinear Phenomena</em>, vol. 430, p. 133090, 2022. <em><a href="https://doi.org/10.1016/j.physd.2021.133090">Available online</a></em>, <em><a href="https://lab-work.github.io/download/wang2021identifiability.pdf">Preprint</a></em></li>
-
-
-            <li data-block-type="core"><strong>Y. Wang</strong> and D. Work, “Estimation for heterogeneous traffic using enhanced particle filters,” <em>Transportmetrica A: Transport Science</em>, vol. 18, no. 3, pp. 568-593, 2022. <a href="https://doi.org/10.1080/23249935.2021.1881186"><em>Available online</em></a></li>
-
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, G. Gunter, M. Nice, M.L. Delle Monache, and D. Work, “Online parameter estimation methods for adaptive cruise control systems,” <em>IEEE Transactions on Intelligent Vehicles</em>, vol. 6, no. 2, pp. 288-298, 2020. <em><a href="https://ieeexplore.ieee.org/document/9195163">Available online</a></em>, <em><a href="https://lab-work.github.io/download/wang2020online.pdf">Preprint</a></em></li>
-
-         </ul>
-         <h5 class="wp-block-heading" data-block-type="core">Conference Proceedings </h5>
-         <ul data-block-type="core">
-            <li data-block-type="core"><strong>Y. Wang</strong>, F. de Souza, J. Han, D. Karbowski, “Is it necessary to calibrate all parameters for each driver?”, <em>2024 Modeling, Estimation, and Control Conference (MECC 2024)</em>. Chicago, IL, USA, October 27-30, 2024. To appear.</li> 
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, M. Menner, and K. Berntorp, “Physics-informed road monitoring and suspension control using crowdsourced vehicle data”, <em>European Control Conference 2024</em>. <em><a href="https://www.merl.com/publications/docs/TR2024-084.pdf">Preprint</a></em></li> 
-
-            <li data-block-type="core">J. Ji, <strong>Y. Wang</strong>, D. Gloudemans, G. Zachár, W. Barbour, and D. Work, "Virtual trajectories for I–24 MOTION: data and tools," In <em>IEEE Forum for Innovative Sustainable Transportation Systems (FISTS)</em> (pp. 1-6), 2024. <em><a href="https://ieeexplore.ieee.org/document/10485593">Available online</a></em>, <em><a href="https://arxiv.org/abs/2311.10888">Preprint</a></em></li>
-
-
-            <li data-block-type="core">D. Gloudemans, G. Zachár, <strong>Y. Wang</strong>, J. Ji, M. Nice, M. Bunting, W. Barbour, J. Sprinkle, B. Piccoli, M.L.D. Monache, and A. Bayen, "So you think you can track?" In <em>Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision</em> (pp. 4528-4538), 2024. <em><a href="https://openaccess.thecvf.com/content/WACV2024/html/Gloudemans_So_You_Think_You_Can_Track_WACV_2024_paper.html">Available online</a></em></li>
-
-            <li data-block-type="core">J. Ji, <strong>Y. Wang</strong>, W. Barbour, and D. Work, "Platoon trajectory reconstruction with conflict resolution using semidefinite relaxation," In <em>IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)</em>, pp. 4332-4338, 2023. <em><a href="https://doi.org/10.1109/ITSC57777.2023.10422151">Available online</a></em></li>
-
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, J. Ji, W. Barbour and D. Work, “Online min cost circulation for multi-object tracking on fragments,” In<em> IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)</em>, pp. 2803-2810, 2023. <em><a href="https://doi.org/10.1109/ITSC57777.2023.10422670">Available online</a></em></li>
-
-            <li data-block-type="core">D. Gloudemans, <strong>Y. Wang</strong>, G. Gumm, W. Barbour, and D. Work, "The Interstate-24 3D dataset: a new benchmark for 3D multi-camera vehicle tracking," In <em>British Machine Vision Conference (BMVC)</em>, 2023. <em><a href="https://papers.bmvc2023.org/0015.pdf">Available online</a></em></li>
-
-
-            <li data-block-type="core">Y. Hu, Y. Zhang, <strong>Y. Wang</strong>, and D. Work, "Detecting socially abnormal highway driving behaviors via recurrent graph attention networks," In <em>Proceedings of the ACM Web Conference</em> (pp. 3086-3097), 2023. <em><a href="https://dl.acm.org/doi/abs/10.1145/3543507.3583452?casa_token=7eAqJMR5AkAAAAAA:yj3QIGcHB_V0J4MvmY4ZATZm4USQZ3WLyKkmCEuqGiau7l9d2E55wKALi3bxXjw-Kiqi4qkaiw">Available online</a></em></li>
-            
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, Z. Wang, K. Han, P. Tiwari and D. Work. “Personalized adaptive cruise control via Gaussian Process regression”. <em>2021 IEEE 24th International Conference on Intelligent Transportation Systems (ITSC)</em> (pp. 1496-1502), 2021. <em><a href="https://ieeexplore.ieee.org/abstract/document/9564498">Available online</a></em>, <em><a href="https://lab-work.github.io/download/wang2021personalized.pdf">Preprint</a></em></li>
-
-
-            <li data-block-type="core">A. Qu, <strong>Y. Wang</strong>, Y. Hu, Y. Wang, and H. Baroud, "A data-integration analysis on road emissions and traffic patterns," In <em>Driving Scientific and Engineering Discoveries Through the Convergence of HPC, Big Data and AI: 17th Smoky Mountains Computational Sciences and Engineering Conference, SMC 2020, Oak Ridge, TN, USA, Revised Selected Papers</em>, vol. 17, pp. 503-517. Springer International Publishing. 2021. <strong>Best student paper award</strong>. <em><a href="https://link.springer.com/chapter/10.1007/978-3-030-63393-6_34">Available online</a></em>, <em><a href="https://lab-work.github.io/download/Qu2021.pdf">Preprint</a></em></li>
-
-
-            <li data-block-type="core"><strong>Y. Wang</strong>, G. Gunter, and D. Work, "Online parameter estimation of adaptive cruise control models with delays and lags," In <em>IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC)</em> (pp. 1-6), 2020. <em><a href="https://doi.org/10.1109/ITSC45102.2020.9294538">Available online</a></em>, <em><a href="https://lab-work.github.io/download/wang2020delay.pdf">Preprint</a></em></li>
-
-
-            <li data-block-type="core">Y. Hu, <strong>Y. Wang</strong>, C. Jiao, R. Sankaran, C. Catlett, and D. Work, "Automatic data cleaning via tensor factorization for large urban environmental sensor networks," In <em>Proceedings of the NeurIPS 2019 Workshop on Tackling Climate Change with Machine Learning</em>, 2019. <a href="https://www.climatechange.ai/papers/neurips2019/27"><em>Available online</em></a></li>
-
-
-            <li data-block-type="core">G. Gunter, <strong>Y. Wang</strong>, D. Gloudemans, R. Stern, D. Work, M. L. Delle Monache, R. Bhadani, M. Bunting, R. Lysecky, J. Sprinkle, B. Seibold, B. Piccoli. “String stability of commercial adaptive cruise control vehicles: WiP abstract” In <em>Proceedings of the 10th ACM/IEEE International Conference on Cyber-Physical Systems</em> (pp. 328-329), <a href="https://dl.acm.org/doi/abs/10.1145/3302509.3313325"><em>Available online</em></a></li>
-
-
-            <li data-block-type="core"><strong>Y. Wang</strong> and D. Work, “Heterogeneous traffic estimation with particle filtering,” In <em>IEEE 24th International Conference on Intelligent Transportation Systems (ITSC)</em> (pp. 2551-2556), 2019. <em><a href="https://ieeexplore.ieee.org/abstract/document/8917248">Available online</a></em>, <em><a href="https://lab-work.github.io/download/wang2019heterogeneous.pdf">Preprint</a></em></li>
-         </ul>
-         <h5 class="wp-block-heading" data-block-type="core">Under Review</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core">Y. Zhang, M. Quinones-Grueiro, Z. Zhang, <strong>Y. Wang</strong>, W. Barbour, G. Biswas, and D. Work, “Marvel: Multi-agent reinforcement-learning for large-scale variable speed limits”, under review.</li>
-            <li data-block-type="core">J.W. Lee,..., <strong>Y. Wang</strong>, et al., “Traffic control via connected and automated vehicles: an open-road field experiment with 100 CAVs”, under review.</li>
-
-         </ul>
-         </p>
-         <br>
-
-         <h4 class="font-weight-bold spanborder"><span>Talks, lectures and presentations</span></h4>
-         <ul data-block-type="core">
-            <li data-block-type="core">“Transportation cyber-physical systems: new instruments for traffic science”, School of Sustainable Engineering and the Built Environment Seminar, Arizona State University, 2024.</li>
-            <li data-block-type="core">“Transportation cyber-physical systems: sensing for intelligence”, Civil and Environmental Engineering Seminar, University of Pittsburgh, 2024.</li>
-            <li data-block-type="core">“Personalized adaptive cruise controls”, CE-5999: Autonomous Vehicles and Traffic, Vanderbilt University, 2023.</li>
-            <li data-block-type="core">“Automatic trajectory data reconstruction: application to I-24 MOTION”, Transportation Research Board Annual Meeting, Washington, D.C., 2023.</li>
-            <li data-block-type="core">“Intelligent solutions for traffic improvements”, Vanderbilt Summer Academy, July 2022.</li>
-            <li data-block-type="core">“Automatic trajectory data reconstruction”, IPAM Lake Arrowhead Reunion Conference, June 2022.</li>
-            <li data-block-type="core">“Personalized adaptive cruise control via Gaussian Process”, 1<sup>st</sup> CIRCLES Workshop on traffic and Autonomy, 2021.</li>
-            <li data-block-type="core">“Interstate-24 MOTION: Enabling smart mobility with high-fidelity trajectory extractions.” The 32<sup>nd</sup> IEEE Intelligent Vehicle Symposium Workshop: Cooperative Driving in Mixed Traffic, 2021.</li>
-            <li data-block-type="core">“Identifiability of car-following dynamics”. Transportation Research Board Annual Meeting poster session, Washington, D.C., 2021.</li>
-            <li data-block-type="core">“Automatic data cleaning via tensor factorization for large urban environmental sensor networks”. Tackling Climate Change with Machine Learning Workshop, NeurIPS 2019.</li>
-            <li data-block-type="core">“Online parameter estimation for adaptive cruise control systems”, Transportation Research Board Annual Meeting poster session, Washington, D.C., 2020.</li>
-            <li data-block-type="core">“Heterogeneous traffic estimation with particle filtering”. IEEE Conference on Intelligent Transportation Systems, Auckland, New Zealand, 2019.</li>
-            <li data-block-type="core">“Complex traffic estimation”. Transportation Research Board Annual Meeting poster session, Washington, D.C., 2019.</li>
-            <li data-block-type="core">“Video as a sensor”. the 13th Coordinated Science Laboratory Student Conference, Urbana, IL, 2018.</li>
-         </ul>
-         <br>
-
-         <h4 class="font-weight-bold spanborder"><span>Leadership & Mentoring</span></h4>
-         <p data-block-type="core"></p>
-         <h5 class="wp-block-heading" data-block-type="core">Mentor for Summer Internship, Argonne National Lab (2024 - )</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core"><strong>Zhaobin Mo</strong>, PhD student @ Columbia University</li>
-         </ul>
-         <h5 class="wp-block-heading" data-block-type="core">Mentor for Independent Research, Vanderbilt University (2019 – 2023)</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core"><strong>Jane Sun</strong>, Undergraduate in Computer Science and Psychology, on data analysis and visualization</li>
-            <li data-block-type="core"><strong>Lisa Liu</strong>, Undergraduate in Electrical Engineering, on MongoDB configuration and benchmark</li>
-            <li data-block-type="core"><strong>Zi Nean Teoh</strong>, Undergraduate in Computer Science and Math, on simulation and data visualization</li>
-            <li data-block-type="core"><strong>David Gao</strong>, Undergraduate in Computer Science, on system logs with ElasticSearch</li>
-            <li data-block-type="core"><strong>Arthur Sung</strong>, Undergraduate in Computer Science, on driving behavior analysis using graphs</li>
-            <li data-block-type="core"><strong>Ao Qu</strong>, Undergraduate in Computer Science, now PhD student @ MIT, on spatial-temporal modeling for smart cities applications</li>
-            <li data-block-type="core"><strong>Canwen Jiao</strong>, Undergduate in Computer Science, now @ Google, on urban-scale environmental sensing analysis</li>
-         </ul>
-         <h5 class="wp-block-heading" data-block-type="core">Course Instructor at NetMath, University of Illinois at Urbana-Champaign (2017 – 2018)</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core">Instructed an online course on Differential Equations</li>
-         </ul>
-         <h5 class="wp-block-heading" data-block-type="core"><strong><a href="https://uiucbridges.wordpress.com/">Engineers in Action (EIA) Bridge Chapter</a></strong>, University of Illinois at Urbana-Champaign (2016 - 2017)</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core"><em>Co-Founder, Advisor: Prof. Bassem Andrawes</em></li>
-            <li data-block-type="core">Led a 6-member student team to design and construct a 76-meter cable suspended footbridge that facilitates 1500 daily crossings in Bajo Maiz, Panama.</li>
-            <li data-block-type="core">Supervised an on-site construction of a 34-meter pedestrian bridge in Patzula, Joyabaj, Guatemala.Fundraised $2,500 for bridge-building projects and recruited 2 technical mentors for on-site construction.</li>
-         </ul>
-         <br>
-
-         <h4 class="font-weight-bold spanborder"><span>Patents</span></h4>
-         <ul data-block-type="core">
-            <li data-block-type="core">R. Gupta, <strong>Y. Wang</strong>, Z. Wang, K. Han, and P. Tiwari. “Hybrid ‘Deterministic Override’ to Probabilistic Advanced Driving Assistance Systems”. U.S. patent application 17/398666, Filed Aug. 2021.</li>
-            <li data-block-type="core">R. Gupta, <strong>Y. Wang</strong>, Z. Wang, K. Han, and P. Tiwari. “Systems and Methods for Protecting a Vehicle at an Intersection”. U.S. patent application 17/41183, Filed Aug. 2021.</li>
-            <li data-block-type="core"><strong>Y. Wang</strong>, Z. Wang, K. Han, R. Gupta, and P. Tiwari. “System and Methods for personalizing Adaptive Cruise Control in a Vehicle”. U.S. patent application 17/387045, Filed Jul. 2021.</li>
-            <li data-block-type="core">R. Gupta, Z. Wang, <strong>Y. Wang</strong>, K. Han, and P. Tiwari. “Detection, Classification, and Prediction of Bacteria Colony Growth in a Vehicle Passenger Cabin”. U.S. patent application 17/373050, Filed Jul. 2021.</li>
-            <li data-block-type="core">R. Gupta, Z. Wang, <strong>Y. Wang</strong>, K. Han, and P. Tiwari. “Vehicular Topple Risk Notification”. U.S. patent application 17/385012, Filed Jul. 2021.</li>
-         </ul>
-         <br>
-
-         <h4 class="font-weight-bold spanborder"><span>Awards</span></h4>
-         <ul data-block-type="core">
-            <li data-block-type="core"><a href="https://risingstars.linklab.virginia.edu/2023/participants.html">Cyber-Physical Systems (CPS) Rising Star</a>, University of Virginia Link Lab, 2023</li>
-            <li data-block-type="core"><a href="https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program">Dwight D. Eisenhower Transportation Fellowship</a>, USDOT, 2018-2023</li>
-            <li data-block-type="core"><a href="harold">Sidney P. Colowick Graduate Student Scholarship</a>, Vanderbilt University, 2021</li>
-            <li data-block-type="core">Harold Stirling Vanderbilt (HSV) Fellowship, Vanderbilt University, 2021</li>
-            <li data-block-type="core">Russell G. Hamilton Scholar Graduate Fellowship, Vanderbilt University, 2018-2021</li>
-            <li data-block-type="core">Fred S. Bailey Undergraduate Scholarship for Cause-Driven Leaders, University YMCA, 2017</li>
-            <li data-block-type="core">Duane Edward and Phyllis Ann Erickson Memorial Scholarship, University of Illinois, 2017</li>
-            <li data-block-type="core">Samuel C. Roberts Award, Civil Engineering at University of Illinois, 2016</li>
-            <li data-block-type="core">Edmund J. James Scholar, University of Illinois, 2014-2018</li>
-            <li data-block-type="core">Dean’s List, University of Illinois, 2014-2018</li>
-         </ul>
-         <br>
-
-         <h4 class="font-weight-bold spanborder"><span>Professional development</span></h4>
-         <p data-block-type="core"></p>
-         <h5 class="wp-block-heading" data-block-type="core">Journal &amp; Conference Reviewer</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core">International Symposium on Transportation and Traﬀic Theory</li>
-            <li data-block-type="core">IEEE Conference on Decision and Control</li>
-            <li data-block-type="core">IEEE Transactions on Intelligent Transportation Systems</li>
-            <li data-block-type="core">IEEE International Intelligent Transportation Systems Conference</li>
-            <li data-block-type="core">IEEE Intelligent Vehicle Symposium</li>
-            <li data-block-type="core">ICLR Workshop “Tackling Climate Change with Machine Learning”</li>
-         </ul>
-         <h5 class="wp-block-heading" data-block-type="core">Workshop Participation</h5>
-         <ul data-block-type="core">
-            <li data-block-type="core"><strong>Long Program: Mathematical Challenges and Opportunities for Autonomous Vehicles </strong>at Institute for Pure and Applied Mathematics (IPAM), 2020</li>
-            <li data-block-type="core"><strong>Workshop on Control for Networked Transportation Systems (CNTS)</strong> at American Control Conference (ACC), 2019</li>
-         </ul>
-         <br> -->
-
          
       </div>
    </div>

@@ -5,53 +5,13 @@ pagination:
 enabled: true
 description: ""
 ---
-<!-- <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</head> -->
+
 
 <div class="container">
 {% if page.url == "/" %}
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
 {% if post.tags contains "sticky" %}
-<!-- <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-   <div class="pl-4 pr-0 h-100 tofront">
-       <div class="row justify-content-between">
-           <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-               <h1 class="mb-3">{{post.title}}</h1>
-               <p class="mb-3 lead">
-                   {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-               </p>
-               <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
-           </div>
-           <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});"> 
-           </div>
-       </div>
-   </div>
-   </div>  -->
-
-   <!-- a greyed out background  -->
-
-<!-- <div class="jumbotron jumbotron-fluid jumbotron-home pt-5 pb-5 mt-3 mb-2rem position-relative overlay overlay-black" style="background-image: url({{site.baseurl}}/{{ post.image }}); background-size: cover; background-position: center;">
-   <div class="pl-4 pr-0 h-100 tofront">
-      <div class="row justify-content-between">
-         <div class="col-md-5 pt-3 pb-6 pr-lg-7 align-self-center text-white">
-            <h1 class="mb-3">{{post.title}}</h1>
-            <p class="mb-3 lead">
-               {{ post.excerpt | strip_html | strip_newlines }}
-            </p> -->
-            <!-- <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a> -->
-         <!-- </div>
-      </div>
-   </div>
-</div> -->
 
 
 <div class="container">
@@ -73,18 +33,14 @@ description: ""
                   </p>
                    <p class="excerpt">{{ site.authors.sal.bio }}</p>
                </div>
-               <div class="col-md-3 text-right">
-                   <img alt="{{ site.authors.sal.name }}" src="assets/images/prof1_crop.jpeg" class="rounded-circle" height="200">
-                   <div class="text-center mt-6"  style="margin-top:0px">
-                     <!-- <h2 class="font-weight-bold spanborder">Welcome</h2> -->
-                     <!-- <div class="sticky-top-offset"> -->
-                        <a href="https://www.linkedin.com/in/yanbing-wang/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
-                        <a href="https://github.com/yanb514" target="_blank"><img src="assets/images/github.png" alt="github.png" style="width: 30px; height: 30px;"></a>
-                        <a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank"><img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px;"></a>
-                        <!-- <a href="https://soundcloud.com/yanbingwang" target="_blank"><img src="assets/images/soundcloud-logo.png" alt="soundcloud" style="width: 30px; height: 30px;"></a> -->
-                     <!-- </div> -->
+               <div class="col-md-3 text-center">
+                  <img alt="{{ site.authors.sal.name }}" src="assets/images/prof1_crop.jpeg" class="rounded-circle" height="200">
+                  <div class="text-center mt-4">
+                      <a href="https://www.linkedin.com/in/yanbing-wang/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; margin: 0 10px;"></a>
+                      <a href="https://github.com/yanb514" target="_blank"><img src="assets/images/github.png" alt="GitHub" style="width: 30px; height: 30px; margin: 0 10px;"></a>
+                      <a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank"><img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px; margin: 0 10px;"></a>
                   </div>
-               </div>
+              </div>
            </div>
        </div>
    </div>
