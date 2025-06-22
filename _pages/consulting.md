@@ -32,8 +32,17 @@ This consulting work is conducted independently of my academic role at Arizona S
 
 **Interested in connecting?**
 
-If you’d like to explore a small-scope collaboration, please reach out at
-<a href="mailto:yanb0514@gmail.com" class="btn btn-secondary" style="margin: 0 0; font-weight: bold;">yanb0514@gmail.com</a>
+If you’d like to explore a small-scope collaboration, please reach out at the following address
+
+<span id="email-link"></span>
+<script>
+  const user = "yanb0514";
+  const domain = "gmail.com";
+  const email = user + "@" + domain;
+  const link = `<a href="mailto:${email}" class="btn btn-secondary" style="margin: 0 0; font-weight: bold;">${email}</a>`;
+  document.getElementById("email-link").innerHTML = link;
+</script>
+
 with a brief message that includes:
 - A brief description of your data or analytics challenge
 - The type of input or deliverables you’re hoping for
