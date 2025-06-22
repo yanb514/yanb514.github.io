@@ -9,29 +9,60 @@ permalink: "/projects.html"
         <div class="col-md-12">
         <br>
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{page.title}}</h1>
-        
-        <br>
-            
-        {% for tag in site.tags %} 
-        {% if tag[0] == "project" %}
-            {% assign pages_list = tag[1] %}
-            {% for post in pages_list %}
-            {% if post.title != null %}
-              {% if group == null or group == post.group %}
+        <!-- Tabs navigation -->
+        <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="true">Featured</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="exploratory-tab" data-toggle="tab" href="#exploratory" role="tab" aria-controls="exploratory" aria-selected="false">Exploratory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="allposts-tab" data-toggle="tab" href="#allposts" role="tab" aria-controls="allposts" aria-selected="false">All posts</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="projectTabsContent" style="padding-top: 30px;">
+          <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+            {% assign featured_posts = site.posts | where_exp: "post", "post.categories contains 'featured'" %}
+            {% for post in featured_posts %}
+              {% unless post.categories contains "exclude" %}
                 {% include main-loop-card.html %}
-              {% endif %}
-            {% endif %}
+              {% endunless %}
             {% endfor %}
-            {% assign pages_list = nil %}
-            {% assign group = nil %}
-        {% endif %}
-        {% endfor %}
-
+          </div>
+          <div class="tab-pane fade" id="exploratory" role="tabpanel" aria-labelledby="exploratory-tab">
+            {% assign eda_posts = site.posts | where_exp: "post", "post.tags contains 'eda'" %}
+            {% for post in eda_posts %}
+              {% unless post.categories contains "exclude" %}
+                {% include main-loop-card.html %}
+              {% endunless %}
+            {% endfor %}
+          </div>
+          <div class="tab-pane fade" id="allposts" role="tabpanel" aria-labelledby="allposts-tab">
+            {% assign all_posts = site.posts | reject: "categories", "news" %}
+            {% for post in all_posts %}
+              {% unless post.categories contains "exclude" or post.categories contains "news" %}
+                {% include main-loop-card.html %}
+              {% endunless %}
+            {% endfor %}
+          </div>
         </div>
-        
-<!--         <div class="col-md-4">
-            {% include sidebar-featured.html %}    
-        </div> -->
+        <script>
+        // Enable Bootstrap tab switching if not already enabled
+        document.addEventListener('DOMContentLoaded', function() {
+          var triggerTabList = [].slice.call(document.querySelectorAll('#projectTabs a'));
+          triggerTabList.forEach(function(triggerEl) {
+            triggerEl.addEventListener('click', function (event) {
+              event.preventDefault();
+              var tabTrigger = new bootstrap.Tab(triggerEl);
+              tabTrigger.show();
+            });
+          });
+        });
+        </script>
+        <!-- End Tabs navigation -->
+        <br>
+        <br>
     
     </div>
     <br>

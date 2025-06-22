@@ -1,17 +1,24 @@
-<div class="mb-2 d-flex justify-content-between main-loop-card">
+
+<p>  <p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+<div class="d-flex main-loop-card">
 <div class="pr-3">
 	<h4 class="mb-1 font-weight-bold">
 	<a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
 	</h4>
 	<p class="excerpt">
-	   {{ post.excerpt  | strip_html | strip_newlines | truncate: 186}}
+	   {{ post.excerpt  | strip_html | strip_newlines | truncate: 200}}
 	</p>
 	<small class="d-block text-muted">
-		<!-- In <span class="catlist"> -->
-		<!-- {% for category in post.categories %}
-		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-		{% endfor %}
-		</span> -->
+		{% if post.keywords %}
+			{% for keyword in post.keywords %}
+				<span class="badge badge-lightblue mr-1">{{ keyword }}</span>
+			{% endfor %}
+			<!-- <span class="badge badge-lightblue">{{ post.keywords | join: ' | ' }}</span> -->
+		{% endif %}
 	</small>
 	<small class="text-muted">
 		{{ post.date | date: '%b %d, %Y' }}
@@ -25,3 +32,4 @@
 	</div>
 {% endif %}
 </div>
+

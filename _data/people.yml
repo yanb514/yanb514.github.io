@@ -1,0 +1,61 @@
+- name: Ziyi Zhang
+  mentored: 2025-
+  current_affiliation: Ph.D. Student at ASU
+  profile_pic: /assets/images/ziyi.jpg
+  status: current
+- name: Jinxi Wu
+  mentored: 2025-
+  current_affiliation: Ph.D. Student at ASU
+  profile_pic: /assets/images/jinxi.webp
+  status: current
+- name: Adam Naqvi
+  mentored: 2025-
+  current_affiliation: Undergraduate, Barrett, The Honors College at ASU 
+  profile_pic: /assets/images/adamnaqvi.jpeg
+  status: current
+- name: Raswanth Prasath S V
+  mentored: 2025-
+  current_affiliation: M.S. at ASU
+  profile_pic: /assets/images/raswanth.png
+  status: current
+- name: Fatlonder Cakolli
+  mentored: 2025
+  current_affiliation: M.S. at ASU
+  profile_pic: /assets/images/fcakolli.png
+- name: Yuanhao Shen
+  mentored: 2024
+  current_affiliation: M.S. at Columbia University
+  profile_pic: /assets/images/yuanhao.jpeg
+
+- name: Zhaobin Mo
+  mentored: 2024-2025
+  current_affiliation: Ph.D. Student at Columbia University
+  profile_pic: /assets/images/zhaobin.jpeg
+
+- name: Jane Sun
+  mentored: 2022-2023, Vanderbilt University
+  profile_pic: /assets/images/jane.jpg
+- name: Lisa Liu
+  mentored: 2021-2022, Vanderbilt University
+  current_affiliation: Undergraduate Student at Vanderbilt University
+  profile_pic: /assets/images/lisa.jpeg
+- name: Zi Nean Teoh
+  mentored: 2021-2022, Vanderbilt University
+  current_affiliation: Software Engineer at Ramp
+  profile_pic: /assets/images/zinean.jpeg
+- name: David Gao
+  mentored: 2021-2022, Vanderbilt University
+  current_affiliation: 
+  profile_pic: /assets/images/davidgao.jpeg
+- name: Arthur Sung
+  mentored: 2021-2022, Vanderbilt University
+  current_affiliation: Undergraduate Student at 
+  profile_pic: /assets/images/arthur.jpeg
+- name: Ao Qu
+  mentored: 2019-2020, Vanderbilt University
+  current_affiliation: Ph.D. Student at MIT
+  profile_pic: /assets/images/aoqu.jpeg
+- name: Canwen Jiao
+  mentored: 2019-2020, Vanderbilt University
+  current_affiliation: Google
+  profile_pic: /assets/images/jazon.jpeg

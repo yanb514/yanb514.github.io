@@ -1,0 +1,31 @@
+---
+title: "Exploratory Data Analysis"
+layout: default
+permalink: "/eda.html"
+description: "This is a curious space where I share exploratory data analysis (EDA) projects—some that may evolve into research papers, others just for fun. 
+I dig into real-world datasets, ask questions, experiment with tools, and uncover insights along the way. 
+These aren’t polished case studies. They’re part intuition, part documenting work-in-progress, and part storytelling."
+---
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+        <br>
+        <h1 class="font-weight-bold title h6 text-uppercase mb-4">{{page.title}}</h1>
+        <p>{{page.description}}</p>
+        <div style="padding-top: 50px;">
+          <!-- Content here -->
+       </div>
+
+       {% assign eda_posts = site.posts | where_exp: "post", "post.tags contains 'eda'" %}
+        {% for post in eda_posts %}
+            {% unless post.categories contains "exclude" %}
+                {% include main-loop-card.html %}
+            {% endunless %}
+        {% endfor %}
+            
+        </div>
+    </div>
+    <br>
+    <br>
+</div>

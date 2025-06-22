@@ -655,17 +655,17 @@ footer {
     margin-bottom:-20px;
 }
 article {
-	font-size:20px;
-	line-height:1.86;
-    /* font-family:Lora; */
+    font-size:20px;
+    line-height:1.86;
 }
-.article-headline {
-    /* font-family: Georgia,Times,"Times New Roman",serif; */
-	font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3.2rem;
-    font-weight: 400;
-    line-height: 1.15;
-    color: #222222;
+
+/* Make the list styles more specific and set explicit size */
+article ul, 
+article ol,
+article ul li,
+article ol li {
+    font-size: 16px;
+    line-height: 1.86;
 }
 article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
 	margin-bottom:2rem;
@@ -807,4 +807,3 @@ div.a2a_full_footer {display:none;}
 		 height:280px !Important;
 	 }
  }
- 

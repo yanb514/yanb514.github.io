@@ -1,5 +1,5 @@
 ---
-title: "Yanbing Wang"
+title: "Yanbing Wang, Ph.D."
 layout: default
 pagination:
 enabled: true
@@ -8,54 +8,62 @@ description: ""
 
 
 <div class="container">
-{% if page.url == "/" %}
-<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-{% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
+
 
 
 <div class="container">
    <div class="row justify-content-center">
        <div class="col-md-12">        
            <div class="row align-items-center mb-5">
-               <div class="col-md-9">
+               <div class="col-md-8">
                    <h2 class="font-weight-bold">{{page.title}}</h2>
-                   <!-- <p><a href="{{ site.authors.sal.site }}">{{ site.authors.sal.site }}</a></p> -->
+                   <p><a href="{{ site.authors.sal.site }}">{{ site.authors.sal.site }}</a></p>
                    <p>
-                     I am a tenure-track Assistant Professor in the School of Sustainable Engineering and the Built Environment (SSEBE) at Arizona State University. Before this, I was a postdoctoral researcher in the <a href="https://vms.taps.anl.gov/">Transportation and Power Systems (TAPS)</a> division at Argonne National Laboratory. I earned my Ph.D. from the <a href="https://www.isis.vanderbilt.edu/">Institute for Software Integrated Systems at Vanderbilt University</a> under the guidance of <a href="https://lab-work.github.io/">Professor Dan Work</a>, where I also served as a Research Engineer.
+                     I leverage large-scale data, advanced computation, and control technologies to address operational challenges in transportation systems.
+                     In my current role at <a href="https://ssebe.engineering.asu.edu/">Arizona State University</a> as an assistant professor, I lead applied research initiatives in governments and industry partners on intelligent systems and mobility analytics.
+                     Prior to ASU, I was a postdoctoral researcher at <a href="https://vms.taps.anl.gov/">Argonne National Laboratory</a>, following my Ph.D. from <a href="https://www.isis.vanderbilt.edu/">the Institute for Software Integrated Systems at Vanderbilt University</a>.
                   </p>
                   <p>
-                     I am a five-time recipient of the prestigious <a href="https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program">Dwight D. Eisenhower Transportation Fellowship</a> awarded by the Federal Highway Administration (FHWA) and was recognized as a <a href="https://risingstars.linklab.virginia.edu/2023/participants.html">Cyber-Physical Systems (CPS) Rising Star</a> by the University of Virginia Link Lab in 2023. I also held research internship positions at <a href="/toyota/">Toyota Infotech Labs</a> and <a href="/merl/">Mitsubishi Electric Research Laboratories (MERL)</a>, and was a visiting researcher at the <a href="https://www.ipam.ucla.edu/programs/long-programs/mathematical-challenges-and-opportunities-for-autonomous-vehicles/">Institute for Pure & Applied Mathematics (IPAM)</a> at UCLA.
+                     I am a five-time recipient of the <a href="https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program">Dwight D. Eisenhower Transportation Fellowship</a> from the Federal Highway Administration and was named a <a href="https://risingstars.linklab.virginia.edu/2023/participants.html">Cyber-Physical Systems Rising Star</a> 
+                     by the National Science Foundation. My experience spans both academia and industries, including positions at <a href="/toyota/">Toyota Infotech Labs</a>, 
+                     <a href="/merl/">Mitsubishi Electric Research Laboratories</a>, and <a href="https://www.ipam.ucla.edu/programs/long-programs/mathematical-challenges-and-opportunities-for-autonomous-vehicles/">UCLA's Institute for Pure & Applied Mathematics</a>.
                   </p>
                   <p>
-                     My research focuses on improving the efficiency and operational performance of transportation systems by leveraging advancements in large-scale sensing, computation, communication, and control technologies. I integrate computational approaches—such as simulation, estimation, and control—with real-world field deployments to bridge the gap between theory and practice.
-                  </p>
+                     My research is rooted in use-inspired philosophy: bridging theory and practice through real-world experimentation and close collaboration with public agencies.
                   </p>
                    <p class="excerpt">{{ site.authors.sal.bio }}</p>
                </div>
-               <div class="col-md-3 text-center">
-                  <img alt="{{ site.authors.sal.name }}" src="assets/images/prof1_crop.jpeg" class="rounded-circle" height="200">
+               <div class="col-md-4 text-center">
+                  <div style="padding-top: 100px;">
+                     <!-- Content here -->
+                  </div>
+                  <img alt="{{ site.authors.sal.name }}" src="assets/images/prof1_crop.jpeg" class="rounded-circle" height="250">
                   <div class="text-center mt-4">
+                        <p><a href="https://www.linkedin.com/in/yanbing-wang/" target="linkedin.com/in/yanbing-wang/">
+                           <img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; margin: 0 10px;">yanbing-wang</a></p>
+                        <p><a href="https://github.com/yanb514" target="_blank">
+                           <img src="assets/images/github.png" alt="GitHub" style="width: 30px; height: 30px; margin: 0 10px;">yanb514</a></p>
+                        <p><a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank">
+                           <img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px; margin: 0 10px;">Google Scholar</a></p>
+                  </div>
+                  <!-- <div class="text-center mt-4">
                       <a href="https://www.linkedin.com/in/yanbing-wang/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; margin: 0 10px;"></a>
                       <a href="https://github.com/yanb514" target="_blank"><img src="assets/images/github.png" alt="GitHub" style="width: 30px; height: 30px; margin: 0 10px;"></a>
                       <a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank"><img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px; margin: 0 10px;"></a>
-                  </div>
+                  </div> -->
               </div>
            </div>
        </div>
    </div>
    </div>
 
-{% endif %}
-{% endfor %}
-{% endif %} 
 
 <p style="color: #e70182; font-weight: bold;"></p>
 
-   <p style="font-weight: bold;">
+   <!-- <p style="font-weight: bold;">
      My lab has openings for self-driven and passionate PhD/MS students.
      If you are interested in working with me, please fill out <a href="https://forms.gle/zzf32SXbGEaXWViM8" target="_blank">this form</a>.
-   </p>
+   </p> -->
 
 
 <br>
@@ -94,46 +102,38 @@ description: ""
          </div>
          {% if count > 6 %}
          <div class="text-center mt-4">
-            <a href="{{site.baseurl}}/news.html" class="btn btn-outline-primary"  style="margin-bottom: 100px;">Read All News</a>
+            <a href="{{site.baseurl}}/news.html" class="btn btn-outline-primary"  style="margin-bottom: 0px;">Read All News</a>
          </div>
          {% endif %}
-         <br>
+         <!-- <br> -->
 
 
 
-
-         <h3 class="font-weight-bold spanborder"><span>Research Highlights</span></h3>
-         <div class="container">
-
-            <div class="row justify-content-center">
-              {% assign count = 0 %}
-              <p></p>
-              {% for post in site.posts %}
-              <p></p>
-                  {% if post.categories[0] == "featured" %}
-                  <p></p>
-                      {% if count < 4 %}
-                      <p></p>
-                          {% include main-loop-card.html%}
-                          <p></p>
-                          {% assign count = count | plus: 1 %}
-                      {% endif %}
-                  {% endif %}
-              {% endfor %}
-          </div>
-
-
-
-
-            {% if count > 3 %}
-            <div class="text-center mt-4">
-               <a href="{{site.baseurl}}/projects.html" class="btn btn-outline-primary">Read All Projects</a>
-            </div>
-            {% endif %}
-         </div>
-         <div style="padding-top: 120px;">
+         <div style="padding-top: 100px;">
             <!-- Content here -->
          </div>
       </div>
+
+
+
+      <h3 class="font-weight-bold spanborder"><span>Projects</span></h3>
+         <div class="container">
+         {% assign featured_posts = site.posts | where: "categories", "featured" %}
+            {% for post in featured_posts limit:6 %}
+               {% unless post.categories contains "exclude" %}
+                  {% include main-loop-card.html post=post %}
+               {% endunless %}
+            {% endfor %}
+
+            {% if featured_posts.size > 6 %}
+            <div class="text-center mt-4">
+                <a href="{{site.baseurl}}/projects.html" class="btn btn-outline-primary" style="margin-bottom: 10px;">Read All Projects</a>
+            </div>
+            {% endif %}
+         </div>
+         <div style="padding-top: 100px;">
+            <!-- Content here -->
+         </div>
+
    </div>
 </div>
