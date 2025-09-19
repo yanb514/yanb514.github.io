@@ -4,6 +4,10 @@ title: "A digital twin infrastructure calibrated on real-world corridor data"
 categories: [featured]
 tags: [project]
 image: assets/images/digital_testbed.png
+image_link: https://drive.google.com/file/d/1xjl9UkrndOd8Njgg4wSKrhVSPub3z5uS/view?usp=drive_link
+paper_link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5065262
+github_link: https://github.com/yanb514/CorridorCalibration
+slides_link: https://drive.google.com/file/d/1xjl9UkrndOd8Njgg4wSKrhVSPub3z5uS/view?usp=drive_link
 ---
 
 Imagine you’re driving on a congested freeway and find yourself caught in stop-and-go waves. These seemingly spontaneous traffic patterns—where vehicles repeatedly speed up and slow down—are surprisingly hard to replicate in microsimulation models. Even with perfectly calibrated inputs based on individual vehicle trajectories, many models struggle to capture the collective dynamics that emerge at the system level.
@@ -53,7 +57,7 @@ With a validated digital twin that mirrors real-world traffic behavior, agencies
 You can find the complete implementation at [github.com/yanb514/CorridorCalibration](https://github.com/yanb514/CorridorCalibration).
 
 ---
-
-**Manuscript**: [Calibrating microscopic traffic models with macroscopic data](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5065262) 
-**Authors**: Yanbing Wang (ASU), Felipe de Souza (ANL), Yaozhong Zhang (ANL), Dominik Karbowski (ANL)  
-**Repository**: [github.com/yanb514/CorridorCalibration](https://github.com/yanb514/CorridorCalibration)
+**Repository**: [github.com/yanb514/CorridorCalibration](https://github.com/yanb514/CorridorCalibration)<br>
+**Slides**: [Presentation](https://drive.google.com/file/d/1xjl9UkrndOd8Njgg4wSKrhVSPub3z5uS/view?usp=drive_link)<br>
+**Manuscript**: [Calibrating microscopic traffic models with macroscopic data](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5065262)<br>
+**Authors**: Yanbing Wang (ASU), Felipe de Souza (ANL), Yaozhong Zhang (ANL), Dominik Karbowski (ANL)

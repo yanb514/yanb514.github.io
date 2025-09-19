@@ -4,6 +4,10 @@ title:  "Personalized ACC in a digital twin framework"
 categories: [featured]
 tags: [project]
 image: assets/images/Unity2.png
+image_link: https://drive.google.com/file/d/1pdioR3WWmO2_jfgQ3zHacDek0fpahogE/view?usp=sharing
+paper_link: https://ieeexplore.ieee.org/abstract/document/9774935/
+video_link: https://www.youtube.com/watch?v=oY9Qxsq1DE4
+slides_link: https://drive.google.com/file/d/1pdioR3WWmO2_jfgQ3zHacDek0fpahogE/view?usp=sharing
 ---
 Advanced driver-assistance systems (ADAS) have matured over the past few decades with the dedication to enhance user experience and gain a wider market penetration. However, personalization components, as a mean to make the current technologies more acceptable and trustworthy for users, have been gaining momentum only very recently. In my recent work with Toyota InfoTech Labs, we aim to learn personalized longitudinal driving behaviors via a Gaussian Process (GP) model. The proposed method learns from individual driver’s naturalistic car-following behavior, and outputs a desired acceleration profile that suits the user’s preference. The learned model, together with a predictive safety filter that prevents rear-end collision, is used as a personalized adaptive cruise control (PACC) system.
 

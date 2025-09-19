@@ -3,6 +3,8 @@ layout: default
 ---
 {% assign author = site.authors[page.author] %}
 <div class="container">
+<!-- Font Awesome for icons - add this to your head or use a CDN if not already included -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
 		<div class="h-100 tofront">
 			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
@@ -26,10 +28,16 @@ layout: default
 					</div>
 				</div>
                 {% if page.image %}
-				<div class="col-md-6 pr-0 align-self-center">
-					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-				</div>
-                {% endif %}
+					<div class="col-md-6 pr-0 align-self-center">
+					{% if page.image_link %}
+					<a href="{{ page.image_link }}" target="_blank">
+					{% endif %}
+						<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+					{% if page.image_link %}
+					</a>
+					{% endif %}
+					</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>
@@ -65,6 +73,55 @@ layout: default
         
 		<div class="col-md-12 col-lg-8">
             
+            <!-- Resource Buttons -->
+            <div class="mb-4">
+                {% if page.news_link or page.blog_link or page.paper_link or page.video_link or page.github_link or page.slides_link or page.data_link %}
+                <div class="resource-buttons">
+                    {% if page.news_link %}
+                    <a href="{{ page.news_link }}" target="_blank" class="btn btn-sm btn-light mr-2 mb-2">
+                        <i class="fas fa-newspaper mr-1"></i> News
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.blog_link %}
+                    <a href="{{ page.blog_link }}" target="_blank" class="btn btn-sm btn-info mr-2 mb-2">
+                        <i class="fas fa-blog mr-1"></i> Blog
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.paper_link %}
+                    <a href="{{ page.paper_link }}" target="_blank" class="btn btn-sm btn-danger mr-2 mb-2">
+                        <i class="fas fa-file-pdf mr-1"></i> Paper
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.video_link %}
+                    <a href="{{ page.video_link }}" target="_blank" class="btn btn-sm btn-success mr-2 mb-2">
+                        <i class="fas fa-video mr-1"></i> Video
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.slides_link %}
+                    <a href="{{ page.slides_link }}" target="_blank" class="btn btn-sm btn-warning mr-2 mb-2">
+                        <i class="fas fa-file-powerpoint mr-1"></i> Slides
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.data_link %}
+                    <a href="{{ page.data_link }}" target="_blank" class="btn btn-sm btn-secondary mr-2 mb-2">
+                        <i class="fas fa-database mr-1"></i> Data
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.github_link %}
+                    <a href="{{ page.github_link }}" target="_blank" class="btn btn-sm btn-dark mr-2 mb-2">
+                        <i class="fab fa-github mr-1"></i> GitHub
+                    </a>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+
             <!-- Article -->
 			<article class="article-post">                
 			{{ content }}                
