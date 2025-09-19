@@ -1,17 +1,15 @@
 ---
-title: "Students"
+title: "Teaching and Mentoring"
 permalink: "/contact/students.html"
 ---
 
-### Perspective students
+### Teaching
+#### 2025 Fall
+- CEE 372: [Transportation Engineering](https://catalog.apps.asu.edu/catalog/classes/classlist?searchType=all&collapse=Y&keywords=60289&term=2257) (Undergraduate)
+  - 82 students enrolled. Fundamental background in highway and traffic engineering, covering planning, design, and operations.
 
-I have funded PhD positions on a rolling basis starting Fall 2026. If you are interested, you are welcome to [<u>submit your PhD application</u>](https://ssebe.engineering.asu.edu/graduate-applications/) through the ASU School of Sustainable Engineering and the Built Environment, Civil and Environmental Engineering (Tempe Campus), with a specialization in Transportation.
-
-
-<div class="alert alert-secondary" role="alert">
-<strong>Attention:</strong> Please ensure your application includes your transcripts, research statement, and reference letters. Mention my name in your application materials for consideration. Shortlisted candidates will be contacted for interviews.
-</div>
-
+#### 2025 Spring
+- CEE 598: [Traffic Flow Theory](https://catalog.apps.asu.edu/catalog/classes/classlist?searchType=all&collapse=Y&keywords=30966&term=2251) (Graduate)
 
 ### Current team
 
@@ -30,6 +28,16 @@ I have funded PhD positions on a rolling basis starting Fall 2026. If you are in
     {% endfor %}
   </div>
 </div>
+
+### Perspective students
+
+I have funded PhD positions on a rolling basis starting Fall 2026. If you are interested, you are welcome to [<u>submit your PhD application</u>](https://ssebe.engineering.asu.edu/graduate-applications/) through the ASU School of Sustainable Engineering and the Built Environment, Civil and Environmental Engineering (Tempe Campus), with a specialization in Transportation.
+
+
+<div class="alert alert-secondary" role="alert">
+<strong>Attention:</strong> Please ensure your application includes your transcripts, research statement, and reference letters. Mention my name in your application materials for consideration. Shortlisted candidates will be contacted for interviews.
+</div>
+
 
 ### Previously mentored students
 
