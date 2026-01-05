@@ -1,4 +1,224 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-19T16:21:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yanbing Wang</title><subtitle></subtitle><entry><title type="html">Publication: SAE Safety Synthesis Report</title><link href="http://localhost:4000/sae-av-safety/" rel="alternate" type="text/html" title="Publication: SAE Safety Synthesis Report" /><published>2025-09-06T00:00:00-07:00</published><updated>2025-09-06T00:00:00-07:00</updated><id>http://localhost:4000/sae-av-safety</id><content type="html" xml:base="http://localhost:4000/sae-av-safety/"><![CDATA[<p>In collaboration with Jeff Wishart, I co-authored an SAE technical report synthesizing safety evidence from NHTSA, IIHS/HLDI, SHRP2, and insurance datasets to assess the crash reduction potential of active safety and automated driving systems (SAE Levels 1–5). The report offers an industry-focused analysis of technology deployment trends, efficacy studies, and human–machine interaction challenges. It identifies key research gaps and provides guidance for regulators, automakers, and insurers on the benefits and limitations of ADAS and AV technologies.</p>]]></content><author><name>sal</name></author><category term="news" /><summary type="html"><![CDATA[In collaboration with Jeff Wishart, I co-authored an SAE technical report synthesizing safety evidence from NHTSA, IIHS/HLDI, SHRP2, and insurance datasets to assess the crash reduction potential of active safety and automated driving systems (SAE Levels 1–5). The report offers an industry-focused analysis of technology deployment trends, efficacy studies, and human–machine interaction challenges. It identifies key research gaps and provides guidance for regulators, automakers, and insurers on the benefits and limitations of ADAS and AV technologies.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/sae-safety-report.png" /><media:content medium="image" url="http://localhost:4000/assets/images/sae-safety-report.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Presentation at ISTDM 2025</title><link href="http://localhost:4000/istdm/" rel="alternate" type="text/html" title="Presentation at ISTDM 2025" /><published>2025-09-05T00:00:00-07:00</published><updated>2025-09-05T00:00:00-07:00</updated><id>http://localhost:4000/istdm</id><content type="html" xml:base="http://localhost:4000/istdm/"><![CDATA[<p>I recently presented our collaborative research, “Discovering Traffic Breakdown Causes Using Explainable AI,” at the International Symposium on Transportation Data &amp; Modelling (ISTDM) in Montreal, Canada. This work was led by Zhaobin Mo, Ph.D., during his internship at Argonne National Laboratory. The study explores the use of interpretable machine learning techniques to uncover the precursors of traffic breakdowns, with implications for smarter infrastructure and traffic management.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-05T14:53:05-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yanbing Wang</title><subtitle></subtitle><entry><title type="html">Predicting traffic delay impact from roadwork: a data-driven approach to work zone management</title><link href="http://localhost:4000/wzdx/" rel="alternate" type="text/html" title="Predicting traffic delay impact from roadwork: a data-driven approach to work zone management" /><published>2025-11-22T00:00:00-07:00</published><updated>2025-11-22T00:00:00-07:00</updated><id>http://localhost:4000/wzdx</id><content type="html" xml:base="http://localhost:4000/wzdx/"><![CDATA[<p>Phoenix’s <a href="https://azdot.gov/i-10-broadway-curve-project">Interstate 10 Broadway Curve</a> represents one of Arizona’s busiest freeway corridors. Its 11-mile segment between Loop 202 and I-17 recently underwent a four-year reconstruction project involving major lane closures. While necessary for infrastructure improvement, such construction activities create significant traffic disruptions that ripple through the entire Phoenix metropolitan area.</p>
+
+<p><a href="https://github.com/yanb514/wzdx"><strong>WorkZoneWatch</strong></a> aims to quantify and predict the short-term delay impacts of planned roadwork and unplanned incidents along this corridor to support ADOT’s construction scheduling and traffic management decisions. Using INRIX historical speed data and AZ511 work zone and incident reports, I developed predictive models to estimate segment-level travel times and conducted counterfactual analysis to isolate the delay attributable to construction events. This post presents the methodology, findings, and their implications for data-driven traffic operations.</p>
+
+<p><img src="../assets/images/map-broadway-curve-051122.jpg" alt="alt text" /><em>Area: I-10 Broadway Curve: 11-mile stretch between Loop 202 and I-17 (source: ADOT)</em></p>
+
+<h2 id="background-and-motivation">Background and Motivation</h2>
+
+<p>Traffic congestion imposes <a href="https://inrix.com/scorecard/">significant economic costs</a> nationally, with the average urban driver losing 51 hours annually to congestion at an estimated cost of $869 per person. Phoenix experiences above-average impacts, with commuters losing 69 hours annually. Arizona’s 122,000 crashes in 2023, including 37,000 with injuries, further underscore the critical need for effective traffic management solutions.</p>
+
+<p>ADOT’s Traffic Operations Center (TOC) operates 24/7 as a statewide traffic management hub, monitoring traffic conditions and coordinating incident response. Arizona’s traveler information system, AZ511, provides real-time updates on travel times, crashes, and camera feeds. However, these tools primarily report current conditions and lack predictive capabilities, limiting their effectiveness for proactive traffic management.</p>
+
+<p>Current practice relies on static tools such as the Work Zone Queue and Delay Analysis Spreadsheet or general heuristics to assess the impact of lane closures and incidents. While helpful for planning, these methods are not suited for dynamic, real-time conditions. Without forecasting capabilities, agencies cannot reliably predict short-term congestion or proactively inform travelers, leaving platforms like AZ511 and dynamic message signs fundamentally reactive.</p>
+
+<h2 id="dataset-generation-and-integration">Dataset Generation and Integration</h2>
+
+<p>I started by integrating two primary data sources to build a predictive delay model: traffic speed observations and event records. The dataset combines AZ511 event reports with INRIX historical traffic speed data through spatial and temporal matching to produce a unified, segment-level time series.</p>
+
+<h3 id="az511-event-data">AZ511 Event Data</h3>
+
+<p>The <a href="https://az511.com/api/wzdx">AZ511 Traveler Information Platform</a> provides event-based data on scheduled work zones and unplanned incidents across Arizona through the WZDx API. I developed an automated data pipeline that collects event records every three hours and stores them in a local SQLite database. From June through October 2025, 48,109 event records were collected, with 474 events mapped to the I-10 Broadway Curve corridor.</p>
+
+<p>Each record includes location, direction, timing, and event classification following the WZDx specification. To integrate this information with traffic data, we performed geolocation by mapping events using their latitude-longitude coordinates to the nearest INRIX Traffic Message Channel (TMC) segments in both travel directions.</p>
+
+<p>However, exploratory analysis revealed several data quality issues. Event updates appear to occur in batch intervals of approximately 3 hours, and unplanned events are significantly underreported. Several crashes reported in local news were missing from AZ511 data. Event descriptions are inconsistently defined, with vague or nonstandard entries (e.g., “C34Rshoulder” and “Crash on right shoulder” representing identical conditions). The Severity field is missing in roughly 90% of records, limiting its utility for feature engineering. To ensure analytical consistency, I manually reclassified events into two categories—planned (work zones, closures) and unplanned (crashes, incidents)—based on their subtype descriptions.</p>
+
+<p><img src="../assets/images/i10_broadway_tmc.png" alt="alt text" /><em>Spatial matching of AZ511 events to TMC segments along the I-10 Broadway Curve. Each color represents a unique TMC segment.</em></p>
+
+<h3 id="inrix-historical-traffic-speed-data">INRIX Historical Traffic Speed Data</h3>
+
+<p><a href="https://inrix.com/products/ai-traffic/">INRIX</a> provides minute-level observations of vehicle speed, free-flow speed, and travel time for individual TMC segments derived from floating-car data. The dataset spans September 2024 through October 2025 and covers 50 TMC segments along I-10. Missing observations were interpolated using temporal smoothing, and duplicate segments were removed. The time range was aligned with AZ511 event records (June–October 2025).</p>
+
+<p>Both event and speed data were synchronized and aggregated into uniform one-hour intervals. The final dataset forms a 3D tensor with dimensions (50 TMC segments × 2,374 time bins × 20 features). Augmented features include road geometry (segment length, ramps, curvature), cyclic time variables (hour of day and day of week encoded as sine/cosine), lagged travel time, and synchronized planned and unplanned events with their subtypes and durations.</p>
+
+<p><img src="../assets/images/heatmap_truth_WB.png" alt="alt text" /><em>Travel time heatmap by segments on Westbound I-10 Broadway Curve from June-October 2025.</em></p>
+
+<p>The dataset exhibits significant class imbalance, with only 0.87% of {TMC, time_bin} entries containing event information. This imbalance required special handling during model training to prevent models from learning to simply predict “no event” conditions.</p>
+
+<h2 id="modeling-approach">Modeling Approach</h2>
+
+<p>Two classes of models were trained based on their treatment of spatial and temporal dependencies. The objective was to predict segment-level travel times under both recurring and non-recurring congestion conditions.</p>
+
+<h3 id="tabular-regression-models">Tabular Regression Models</h3>
+
+<p>Tabular regression models—including Linear Regression (OLS, Ridge, Lasso) and Tree-Based models (Random Forest, Gradient Boosted Regression Trees, XGBoost)—were trained on independent {TMC, time_bin} entries without explicit spatial or temporal structure. These models treat each observation as independent and rely on feature engineering to capture time-of-day patterns and spatial characteristics.</p>
+
+<p>Due to the severe class imbalance (events occur in less than 1% of time bins), non-event entries were downsampled to achieve approximately 50% event balance in the training data. This prevents models from trivially learning to predict normal traffic conditions while ignoring event impacts.</p>
+
+<h3 id="sequence-models">Sequence Models</h3>
+
+<p>Sequence models were designed to capture temporal continuity and spatial correlations. Long Short-Term Memory (LSTM) networks were trained as global models on TMC time-series sliced into 24-hour sequences, enabling the model to learn temporal dependencies across the corridor. Graph Convolutional Network LSTM (GCN-LSTM) extends this approach by incorporating spatial structure, using graph convolutions to model how congestion propagates between connected TMC segments.</p>
+
+<h3 id="feature-engineering">Feature Engineering</h3>
+
+<p>For each model family, various feature combinations were tested:</p>
+<ol>
+  <li>Road features only</li>
+  <li>Road + events (evt)</li>
+  <li>Road + events + lagged travel time (lag)</li>
+  <li>Road + lag</li>
+  <li>Road + cyclic time features (cyc)</li>
+  <li>Road + cyclic + lag</li>
+  <li>Full features: road + cyclic + events + lag</li>
+</ol>
+
+<p>Lagged travel time features (1, 2, and 3 hours prior) proved to be the most predictive, capturing short-term persistence in traffic conditions. Cyclic time features encoded daily and weekly periodicity using sine and cosine transformations of hour-of-day and day-of-week.</p>
+
+<p><img src="../assets/images/xgb_full_feature_importance_nested_pie.png" alt="alt text" /><em>Feature importance identified by XGBoost.</em></p>
+
+<h2 id="model-performance-and-evaluation">Model Performance and Evaluation</h2>
+
+<p>Cross-validation results showed that adding lagged travel time features substantially improved prediction accuracy across all model families. Among tabular models, XGBoost achieved the lowest test RMSE when trained with full features. However, LSTM demonstrated the best overall prediction accuracy, followed by XGBoost.</p>
+
+<p><img src="../assets/images/tabular_models_cv_rmse.png" alt="alt text" /><em>Feature importance identified by XGBoost.</em></p>
+
+<p><img src="../assets/images/full_feature_models_cv_rmse.png" alt="alt text" /><em>Feature importance identified by XGBoost.</em></p>
+
+<p>The following heatmaps visualize predicted travel times for westbound I-10 using XGBoost and LSTM with full feature sets. Both models successfully capture the diurnal patterns and spatial variation in travel times along the corridor.</p>
+
+<p><img src="../assets/images/heatmap_xgb_full_WB.png" alt="alt text" /><em>XGBoost model with full features.</em></p>
+
+<p><img src="../assets/images/heatmap-lstm-full.png" alt="alt text" /><em>LSTM model with full features.</em></p>
+
+<p>Feature importance analysis using XGBoost revealed that lagged travel time features dominated model performance, contributing significantly more than event-related features. This finding suggests two insights: first, traffic conditions exhibit strong temporal autocorrelation over 1-3 hour windows; second, event reporting may not be sufficiently synchronized with resulting traffic patterns to serve as a strong predictive signal.</p>
+
+<p>All models were designed for one-step-ahead prediction: given current or recent states, predict travel time in the next time bin. They are not configured for multi-step or recursive forecasting, which would require different architectural considerations to prevent error accumulation.</p>
+
+<h2 id="counterfactual-analysis-estimating-event-induced-delay">Counterfactual Analysis: Estimating Event-Induced Delay</h2>
+
+<p>Predicting travel times is operationally useful, but transportation agencies require causal estimates: how much delay is attributable to specific events? In the absence of randomized controlled trials or natural experiments, we employed counterfactual analysis using machine learning to estimate event-induced delays.</p>
+
+<h3 id="methodology">Methodology</h3>
+
+<p>The counterfactual approach estimates what traffic conditions would have been in the absence of an event by training a separate model on “clean” data. Specifically:</p>
+
+<ol>
+  <li><strong>Data preparation</strong>: Remove all observations within ±3 hours of any reported event</li>
+  <li><strong>Feature exclusion</strong>: Remove event-related features and lag features potentially influenced by events</li>
+  <li><strong>Model training</strong>: Train XGBoost on the filtered dataset to learn baseline (no-event) traffic patterns</li>
+  <li><strong>Delay estimation</strong>: Compute the difference between full model predictions (with events) and counterfactual model predictions (without events)</li>
+</ol>
+
+<p>This approach assumes that the counterfactual model captures normal recurring congestion patterns (time-of-day, day-of-week effects), while the full model incorporates both recurring patterns and event-induced disruptions. The difference isolates the marginal impact of events.</p>
+
+<p>Because this process disrupts temporal continuity by removing event-influenced periods, sequence models (LSTM, GCN-LSTM) could not be used for counterfactual analysis, as they require complete time-series data for training. XGBoost’s tabular structure made it suitable for this analysis.</p>
+
+<h3 id="findings">Findings</h3>
+
+<p>Counterfactual analysis revealed that planned work zones induce measurable, lagged delays that persist several hours beyond event start times:</p>
+
+<ul>
+  <li><strong>Magnitude</strong>: Planned events cause approximately 15 seconds per mile of additional delay (roughly 3 minutes across the 11-mile Broadway Curve segment), approximately doubling routine congestion levels</li>
+  <li><strong>Temporal patterns</strong>: Delays peak 3-5 hours after work zone activation, not immediately upon closure</li>
+  <li><strong>Diurnal variation</strong>: Event-induced delays are most disruptive during weekday early afternoons (12-3 PM) and weekend mornings</li>
+</ul>
+
+<p><img src="../assets/images/extra_delay_heatmap_dow_hour.png" alt="alt text" /></p>
+
+<p><img src="../assets/images/diff_by_event_type_boxplot.png" alt="alt text" /></p>
+
+<p>These findings indicate that traffic recovery following lane closures is neither immediate nor symmetric. The lagged delay patterns suggest that congestion propagates upstream and requires several hours to dissipate, even after the physical obstruction is removed.</p>
+
+<p>While ADOT’s current mitigation strategies—including off-peak and weekend closures—reduce delays relative to peak-hour work, they do not eliminate disruption. Weekend closures still generate measurable delays during morning hours when recreational and commercial traffic volumes are substantial.</p>
+
+<h3 id="economic-impact-assessment">Economic Impact Assessment</h3>
+
+<p>The economic cost of construction-induced delays was estimated using standard congestion cost methodologies. Calculations are based on:</p>
+
+<ul>
+  <li>Average congestion cost: $17.90 per hour per commuter (<a href="https://inrix.com/products/ai-traffic/">INRIX Global Traffic Scorecard 2024</a>)</li>
+  <li>Average daily traffic volume: 300,000 vehicles on I-10 during weekdays <a href="https://www.abc15.com/news/operation-safe-roads/adot-completes-construction-on-i-10-along-broadway-curve">(abs15 News)</a></li>
+  <li>Annual vehicle miles traveled (VMT): 19.4 million per day on the I-10 corridor <a href="https://azdot.gov/sites/default/files/2023-04/ev-infrastructure-deployment.pdf">(State of Arizona Electric Vehicle Infrastructure Deployment Plan)</a></li>
+</ul>
+
+<p>Results indicate:</p>
+<ul>
+  <li><strong>878 hours of daily delay</strong> during the Broadway Curve Improvement project period</li>
+  <li><strong>$5.7 million annually</strong> for the 11-mile Broadway Curve segment alone</li>
+  <li><strong>1.8 million annual hours corridor-wide</strong> ($33 million per year)</li>
+</ul>
+
+<p>These estimates suggest that optimizing construction schedules based on predictive delay models could reduce congestion time by approximately 50%, potentially saving Phoenix-area commuters up to $33 million annually. The analysis underscores the economic value of data-driven work zone scheduling and highlights the importance of improved event reporting systems for accurate prediction.</p>
+
+<h2 id="key-insights-and-limitations">Key Insights and Limitations</h2>
+
+<h3 id="methodological-contributions">Methodological Contributions</h3>
+
+<ol>
+  <li><strong>Data integration framework</strong>: Combining AZ511 event data with INRIX traffic speeds through spatiotemporal matching creates a dataset substantially more valuable than either source alone for causal analysis</li>
+  <li><strong>Temporal feature engineering</strong>: Lagged travel time features (1-3 hours) capture short-term traffic persistence and substantially improve prediction accuracy across all model architectures</li>
+  <li><strong>Counterfactual analysis for causal inference</strong>: Machine learning-based counterfactual modeling enables estimation of event-induced delays in the absence of experimental controls, providing a practical approach to causal inference in operational settings</li>
+</ol>
+
+<h3 id="data-quality-limitations">Data Quality Limitations</h3>
+
+<ol>
+  <li><strong>Event reporting latency and completeness</strong>: AZ511 updates occur in approximately 3-hour batches (also varying by jurisdictions), introducing lag between incident occurrence and system reporting. Many incidents documented in local news sources were absent from AZ511 records</li>
+  <li><strong>Metadata inconsistency</strong>: Severity fields are missing in 90% of event records. Event subtype descriptions use inconsistent and sometimes undefined codes, requiring manual reclassification</li>
+  <li><strong>Sequence model constraints</strong>: LSTM and GCN-LSTM models require continuous time-series data and cannot accommodate the temporal gaps created by removing event-influenced periods for counterfactual analysis</li>
+</ol>
+
+<p>These limitations suggest that improved real-time event detection—potentially through anomaly detection in traffic speed patterns—may be more reliable than depending solely on official incident reporting systems.</p>
+
+<h2 id="future-steps">Future Steps</h2>
+
+<p>Several extensions could improve the predictive accuracy and operational utility of this work:</p>
+
+<h3 id="real-time-incident-detection-from-traffic-patterns">Real-Time Incident Detection from Traffic Patterns</h3>
+
+<p>Rather than relying solely on official crash reports, anomaly detection algorithms could infer incident occurrence from real-time traffic speed patterns. When a normally free-flowing segment exhibits sudden speed reductions while neighboring segments maintain normal flow, this signature strongly indicates an incident—often before official reports are filed. This approach could address the systematic underreporting observed in AZ511 data.</p>
+
+<h3 id="enhanced-feature-context">Enhanced Feature Context</h3>
+
+<ol>
+  <li><strong>Weather integration</strong>: Incorporating precipitation, temperature, and dust storm warnings could improve prediction accuracy during adverse conditions</li>
+  <li><strong>Event descriptions as text features</strong>: Natural language processing of event description fields could extract structured information from unstructured narratives</li>
+  <li><strong>Connected vehicle data</strong>: Real-time probe vehicle data could provide higher-resolution traffic state information than aggregated speed feeds</li>
+</ol>
+
+<h3 id="causal-inference-methods">Causal Inference Methods</h3>
+
+<p>Exploring formal causal inference frameworks—such as difference-in-differences, synthetic control methods, or causal forests—could provide more rigorous estimates of delay attribution when multiple factors interact (e.g., simultaneous work zones, demand fluctuations, and weather events).</p>
+
+<h3 id="system-expansion">System Expansion</h3>
+
+<p>Extending the analysis to additional corridors (Loop 101, I-17, rural highways) would test model generalizability and provide system-wide delay estimates for ADOT’s network-level traffic management.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>This work demonstrates that data-driven traffic delay prediction is operationally feasible using existing data infrastructure. Combining event records with high-resolution traffic speed data enables both short-term travel time forecasting and causal estimation of event-induced delays through counterfactual modeling.</p>
+
+<p>Key findings include:</p>
+<ol>
+  <li><strong>Predictive accuracy</strong>: LSTM models achieve the highest prediction accuracy, with XGBoost providing comparable performance in tabular settings</li>
+  <li><strong>Delay quantification</strong>: Planned work zones cause approximately 15 seconds per mile of additional delay, with peak impacts occurring 3-5 hours after event initiation</li>
+  <li><strong>Economic significance</strong>: Optimized construction scheduling based on predictive models could reduce corridor-wide congestion costs by up to $33 million annually in the Phoenix metropolitan area</li>
+</ol>
+
+<h3 id="implications-for-transportation-operations">Implications for Transportation Operations</h3>
+
+<p>For transportation agencies, the implementation path requires:</p>
+<ol>
+  <li><strong>Enhanced event reporting systems</strong>: Real-time, complete, and standardized incident feeds with consistent metadata are foundational for accurate prediction</li>
+  <li><strong>Predictive analytics integration</strong>: Machine learning models can forecast delays hours in advance, enabling proactive traffic management strategies</li>
+  <li><strong>Data-driven scheduling</strong>: Quantitative delay estimates can inform construction timing decisions to minimize economic and operational impacts</li>
+</ol>
+
+<p>The economic case for predictive traffic management is substantial. The technical infrastructure exists, validated models are available, and the potential cost savings justify investment in operational deployment. Future work should focus on real-time system integration, expanded corridor coverage, and formal causal inference frameworks for multi-factor delay attribution.</p>
+
+<hr />
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><strong>Project Code &amp; Data</strong>: <a href="https://github.com/yanb514/wzdx">WorkZoneWatch GitHub Repository</a></li>
+  <li><strong>AZ511 Traveler Information</strong>: <a href="https://az511.com/api/wzdx">Arizona 511 API Documentation</a></li>
+  <li><strong>I-10 Broadway Curve Project</strong>: <a href="https://azdot.gov/i-10-broadway-curve-project">ADOT Project Overview</a></li>
+  <li><strong>INRIX Traffic Data</strong>: <a href="https://inrix.com/products/ai-traffic/">INRIX Solutions</a></li>
+  <li><strong>Traffic Congestion Economics</strong>: <a href="https://inrix.com/scorecard/">INRIX Global Traffic Scorecard 2024</a></li>
+  <li><strong>Interactive Dashboard</strong>: <a href="https://github.com/yanb514/wzdx/tree/main/dashboard">Phoenix Work Zone Monitoring Tool</a></li>
+</ul>]]></content><author><name>sal</name></author><category term="featured" /><category term="project" /><category term="eda" /><summary type="html"><![CDATA[Phoenix’s Interstate 10 Broadway Curve represents one of Arizona’s busiest freeway corridors. Its 11-mile segment between Loop 202 and I-17 recently underwent a four-year reconstruction project involving major lane closures. While necessary for infrastructure improvement, such construction activities create significant traffic disruptions that ripple through the entire Phoenix metropolitan area.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/wzdx.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/images/wzdx.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Publication: SAE Safety Synthesis Report</title><link href="http://localhost:4000/sae-av-safety/" rel="alternate" type="text/html" title="Publication: SAE Safety Synthesis Report" /><published>2025-09-06T00:00:00-07:00</published><updated>2025-09-06T00:00:00-07:00</updated><id>http://localhost:4000/sae-av-safety</id><content type="html" xml:base="http://localhost:4000/sae-av-safety/"><![CDATA[<p>In collaboration with Jeff Wishart, I co-authored an SAE technical report synthesizing safety evidence from NHTSA, IIHS/HLDI, SHRP2, and insurance datasets to assess the crash reduction potential of active safety and automated driving systems (SAE Levels 1–5). The report offers an industry-focused analysis of technology deployment trends, efficacy studies, and human–machine interaction challenges. It identifies key research gaps and provides guidance for regulators, automakers, and insurers on the benefits and limitations of ADAS and AV technologies.</p>]]></content><author><name>sal</name></author><category term="news" /><summary type="html"><![CDATA[In collaboration with Jeff Wishart, I co-authored an SAE technical report synthesizing safety evidence from NHTSA, IIHS/HLDI, SHRP2, and insurance datasets to assess the crash reduction potential of active safety and automated driving systems (SAE Levels 1–5). The report offers an industry-focused analysis of technology deployment trends, efficacy studies, and human–machine interaction challenges. It identifies key research gaps and provides guidance for regulators, automakers, and insurers on the benefits and limitations of ADAS and AV technologies.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/sae-safety-report.png" /><media:content medium="image" url="http://localhost:4000/assets/images/sae-safety-report.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Presentation at ISTDM 2025</title><link href="http://localhost:4000/istdm/" rel="alternate" type="text/html" title="Presentation at ISTDM 2025" /><published>2025-09-05T00:00:00-07:00</published><updated>2025-09-05T00:00:00-07:00</updated><id>http://localhost:4000/istdm</id><content type="html" xml:base="http://localhost:4000/istdm/"><![CDATA[<p>I recently presented our collaborative research, “Discovering Traffic Breakdown Causes Using Explainable AI,” at the International Symposium on Transportation Data &amp; Modelling (ISTDM) in Montreal, Canada. This work was led by Zhaobin Mo, Ph.D., during his internship at Argonne National Laboratory. The study explores the use of interpretable machine learning techniques to uncover the precursors of traffic breakdowns, with implications for smarter infrastructure and traffic management.</p>
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
   <iframe src="https://drive.google.com/file/d/1q_XiGy4AX6xx8CJaAxIhht8YM5ZKZZgD/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
@@ -135,12 +355,4 @@
 
 <p>Photo credit: Yi Zhang.</p>]]></content><author><name>sal</name></author><category term="news" /><summary type="html"><![CDATA[This year marked my seventh time attending the Transportation Research Board (TRB) Annual Meeting—and my first as a faculty member! The event continues to evolve, with noticeable changes introduced by the new administration, yet it remains an invaluable opportunity for reconnecting with long-time colleagues and forming new connections across the field.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/trb2025_2.JPG" /><media:content medium="image" url="http://localhost:4000/assets/images/trb2025_2.JPG" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I will be joining the faculty of Arizona State University</title><link href="http://localhost:4000/join-asu/" rel="alternate" type="text/html" title="I will be joining the faculty of Arizona State University" /><published>2025-01-03T00:00:00-07:00</published><updated>2025-01-03T00:00:00-07:00</updated><id>http://localhost:4000/join-asu</id><content type="html" xml:base="http://localhost:4000/join-asu/"><![CDATA[<p>I will be joining the Ira A. Fulton Schools of Engineering at Arizona State University, as a tenure-track Assistant Professor in 2025!</p>
 
-<p>Read the New Faculty Highlight in <a href="https://fullcircle.asu.edu/welcome/yanbing-wang/">FULLCIRCLE</a>.</p>]]></content><author><name>sal</name></author><category term="news" /><summary type="html"><![CDATA[I will be joining the Ira A. Fulton Schools of Engineering at Arizona State University, as a tenure-track Assistant Professor in 2025!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/asu-faculty.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/asu-faculty.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Presenting at MECC 2024 in Chicago</title><link href="http://localhost:4000/mecc/" rel="alternate" type="text/html" title="Presenting at MECC 2024 in Chicago" /><published>2024-10-30T00:00:00-07:00</published><updated>2024-10-30T00:00:00-07:00</updated><id>http://localhost:4000/mecc</id><content type="html" xml:base="http://localhost:4000/mecc/"><![CDATA[<p>The 4th Modeling, Estimation, and Control Conference (MECC 2024) took place this year in Chicago, and I had the pleasure of presenting in the Invited Session on Automotive and Transportation Systems (ATS). It was a great opportunity to share my work and engage with researchers advancing the frontiers of modeling and control in all engineering disciplines.</p>
-
-<p>Grateful for the chance to contribute and connect with colleagues in this community.</p>
-
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
-  <iframe src="https://drive.google.com/file/d/1MMg7kCEvABJZAkznl2ITcai3TQIIowch/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
-  </iframe>
-  <br />
-</div>]]></content><author><name>sal</name></author><category term="news" /><summary type="html"><![CDATA[The 4th Modeling, Estimation, and Control Conference (MECC 2024) took place this year in Chicago, and I had the pleasure of presenting in the Invited Session on Automotive and Transportation Systems (ATS). It was a great opportunity to share my work and engage with researchers advancing the frontiers of modeling and control in all engineering disciplines.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/mecc2024.JPG" /><media:content medium="image" url="http://localhost:4000/assets/images/mecc2024.JPG" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Read the New Faculty Highlight in <a href="https://fullcircle.asu.edu/welcome/yanbing-wang/">FULLCIRCLE</a>.</p>]]></content><author><name>sal</name></author><category term="news" /><summary type="html"><![CDATA[I will be joining the Ira A. Fulton Schools of Engineering at Arizona State University, as a tenure-track Assistant Professor in 2025!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/asu-faculty.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/asu-faculty.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -31,7 +31,7 @@ permalink: "/contact/students.html"
 
 ### Perspective students
 
-I have funded PhD positions on a rolling basis starting Fall 2026. If you are interested, you are welcome to [<u>submit your PhD application</u>](https://ssebe.engineering.asu.edu/graduate-applications/) through the ASU School of Sustainable Engineering and the Built Environment, Civil and Environmental Engineering (Tempe Campus), with a specialization in Transportation.
+I have funded PhD positions on a rolling basis. If you are interested, you are welcome to [<u>submit your PhD application</u>](https://ssebe.engineering.asu.edu/graduate-applications/) through the ASU School of Sustainable Engineering and the Built Environment, Civil and Environmental Engineering (Tempe Campus), with a specialization in Transportation.
 
 
 <div class="alert alert-secondary" role="alert">
