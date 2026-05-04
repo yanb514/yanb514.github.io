@@ -1,0 +1,130 @@
+---
+title: "Yanbing Wang, Ph.D."
+layout: default
+pagination:
+enabled: true
+description: ""
+---
+
+
+<div class="container">
+
+
+
+<div class="container">
+   <div class="row justify-content-center">
+       <div class="col-md-12">        
+           <div class="row align-items-center mb-5">
+               <div class="col-md-8">
+                   <h2 class="font-weight-bold">{{page.title}}</h2>
+                   <p><a href="{{ site.authors.sal.site }}">{{ site.authors.sal.site }}</a></p>
+                   <p>
+                     Hello!
+                   </p>
+                  <p>
+                     I’m a machine learning engineer, and I spent part of my career in academia as an assistant professor at Arizona State University, working in transportation research.
+                  </p>
+                  <p>
+                     These days I focus on building end-to-end machine learning systems for real-world applications.
+                  </p>
+                   <p class="excerpt">{{ site.authors.sal.bio }}</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <div style="padding-top: 100px;">
+
+                  </div>
+                  <img alt="{{ site.authors.sal.name }}" src="assets/images/yanbing-green.png" class="rounded-circle" style="width: 250px; height: 250px; object-fit: cover;">
+                  <!-- <div class="text-center mt-4">
+                        <p><a href="https://www.linkedin.com/in/yanbing-wang/" target="linkedin.com/in/yanbing-wang/">
+                           <img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; margin: 0 10px;">yanbing-wang</a></p>
+                        <p><a href="https://github.com/yanb514" target="_blank">
+                           <img src="assets/images/github.png" alt="GitHub" style="width: 30px; height: 30px; margin: 0 10px;">yanb514</a></p>
+                        <p><a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank">
+                           <img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px; margin: 0 10px;">Google Scholar</a></p>
+                  </div> -->
+                  <!-- <div class="text-center mt-4">
+                      <a href="https://www.linkedin.com/in/yanbing-wang/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; margin: 0 10px;"></a>
+                      <a href="https://github.com/yanb514" target="_blank"><img src="assets/images/github.png" alt="GitHub" style="width: 30px; height: 30px; margin: 0 10px;"></a>
+                      <a href="https://scholar.google.com/citations?user=38Esjq8AAAAJ&hl=en" target="_blank"><img src="assets/images/scholar.png" alt="Google Scholar" style="width: 30px; height: 30px; margin: 0 10px;"></a>
+                  </div> -->
+              </div>
+           </div>
+       </div>
+   </div>
+   </div>
+
+
+<!-- <p style="color: #e70182; font-weight: bold;"></p> -->
+
+   <!-- <p style="font-weight: bold;">
+     My lab has openings for self-driven and passionate PhD/MS students.
+     If you are interested in working with me, please fill out <a href="https://forms.gle/zzf32SXbGEaXWViM8" target="_blank">this form</a>.
+   </p> -->
+
+
+<!-- <br> -->
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+<!-- <div class="row mt-3"> -->
+   <!-- <div class="col-md-12 main-loop">
+      <h3 class="font-weight-bold spanborder"><span>Latest News</span></h3>
+      <div class="container">
+         <div class="row gap-y "  style="margin-bottom: -20px;">
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+            {% if post.categories contains "news" %}
+            {% if count < 6 %}
+            <div class="col-lg-4 mb-4" >
+               <a href="{{ site.baseurl }}{{ post.url }}">
+                   {% if post.image contains "://" %}
+                       <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+                   {% else %}
+                       <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+                   {% endif %}
+               </a>
+               <h5 class="mb-1 font-weight-bold"> 
+                  <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+               </h5>
+               <small class="text-muted">
+               {{ post.date | date: '%b %d, %Y' }}
+               </small>
+            </div>
+            {% endif %}
+            {% assign count = count | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+         </div> -->
+         <!-- {% if count > 6 %}
+         <div class="text-center mt-4">
+            <a href="{{site.baseurl}}/news.html" class="btn btn-outline-primary"  style="margin-bottom: 0px;">Read All News</a>
+         </div>
+         {% endif %} -->
+
+
+
+         <div style="padding-top: 100px;">
+            <!-- Content here -->
+         </div>
+      </div>
+
+
+<!-- 
+      <h3 class="font-weight-bold spanborder"><span>Research Highlights</span></h3>
+         <div class="container">
+         {% assign featured_posts = site.posts | where: "categories", "featured" %}
+            {% for post in featured_posts limit:6 %}
+               {% unless post.categories contains "exclude" %}
+                  {% include main-loop-card.html post=post %}
+               {% endunless %}
+            {% endfor %}
+
+            {% if featured_posts.size > 6 %}
+            <div class="text-center mt-4">
+                <a href="{{site.baseurl}}/projects.html" class="btn btn-outline-primary" style="margin-bottom: 10px;">Read All Projects</a>
+            </div>
+            {% endif %}
+         </div>
+         <div style="padding-top: 100px;">
+         </div> -->
+
+   </div>
+</div>
